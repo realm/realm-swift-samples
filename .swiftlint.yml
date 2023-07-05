@@ -1,6 +1,7 @@
 included:
   - README.md
   - SyncConnectionStateErrorReset
+  - AnalyticsTelemetricsData
 type_name:
   allowed_symbols:
     - _
