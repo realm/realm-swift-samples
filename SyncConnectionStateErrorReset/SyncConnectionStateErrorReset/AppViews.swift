@@ -19,11 +19,9 @@
 import SwiftUI
 import RealmSwift
 
-// Entry Point
 struct InitialView: View {
     @ObservedObject var realmManager = RealmManager()
     @ObservedObject var app: RealmSwift.App
-    @State var isLogged: Bool = false
 
     var body: some View {
         // This observes changes on the App, which includes User State changes,
@@ -36,8 +34,17 @@ struct InitialView: View {
                         .environment(\.realmConfiguration, realm.configuration)
                         .toolbar {
                             ToolbarItemGroup(placement: .bottomBar) {
-                                Text("\(realmManager.sessionState?.literal ?? "")")
-                                Text("\(realmManager.connectionState?.literal ?? "")")
+                                HStack {
+                                    VStack {
+                                        Text("Session State")
+                                        Text("\(realmManager.sessionState?.literal ?? "")")
+                                    }
+                                    Spacer()
+                                    VStack {
+                                        Text("Connection State")
+                                        Text("\(realmManager.connectionState?.literal ?? "")")
+                                    }
+                                }
                             }
                         }
                 } else {
@@ -56,7 +63,7 @@ struct InitialView: View {
 
             }
         case .loggedOut, .removed, .none:
-            LoginView(isLogged: isLogged)
+            LoginView()
                 .padding()
         default: EmptyView() // Unreachable
         }
@@ -65,8 +72,6 @@ struct InitialView: View {
 
 // Login/Sign Up View.
 struct LoginView: View {
-    @State var isLogged: Bool
-
     @ObservedObject var appAuthManager = AppAuthManager()
 
     @State var username: String = "john@doe.com"
@@ -82,10 +87,9 @@ struct LoginView: View {
                         .textInputAutocapitalization(.none)
                     SecureField("Password", text: $password)
                         .textInputAutocapitalization(.none)
-                    Button("Login") {
+                    Button("Log In") {
                         Task {
                             await appAuthManager.login(username: username, password: password)
-                            isLogged = true
                         }
                     }
                     .disabled(username.isEmpty || password.isEmpty)
@@ -99,7 +103,7 @@ struct LoginView: View {
                 Spacer()
                 VStack {
                     Text(appAuthManager.signUpMessage)
-                        .foregroundStyle(.blue)
+                        .foregroundStyle(.green)
                     Text(appAuthManager.errorMessage)
                         .foregroundStyle(.red)
                 }
@@ -113,7 +117,7 @@ struct LoginView: View {
     }
 }
 
-// Kiosks List View, shows all kiosk associated to the logged user.
+// Kiosks List View, shows all kiosk associated with the logged-in user.
 struct KioskView: View {
     var user: User
 
@@ -152,19 +156,19 @@ struct KioskView: View {
             .navigationTitle("Kiosks List")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
-                    Button("LogOut") {
+                    Button("Log Out") {
                         realmApp.currentUser?.logOut { _ in }
                     }
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button("Add") {
+                    Button("Add Kiosk") {
                         showingAlert.toggle()
                     }
                     .alert("Kiosk Name", isPresented: $showingAlert) {
                         TextField("Kiosk's Name", text: $name)
                         Button("OK", action: createNewKiosk)
                     } message: {
-                        Text("Introduce Kiosk's name.")
+                        Text("Name the new Kiosk.")
                     }
                 }
             }
@@ -190,7 +194,7 @@ struct KioskView: View {
 }
 
 // Products view, show a list of all the products and prices associated
-// to the selected kiosk.
+// with the selected kiosk.
 struct ProductsView: View {
     @ObservedRealmObject var kiosk: Kiosk
 
@@ -212,7 +216,7 @@ struct ProductsView: View {
                 ProductDetailView(product: product)
             }
             .toolbar {
-                Button("New") {
+                Button("Add Product") {
                     addNewProduct()
                 }
             }
@@ -225,14 +229,14 @@ struct ProductsView: View {
 
     func addNewProduct() {
         let newProduct = Product()
-        newProduct.title = ""
+        newProduct.title = "New product"
         newProduct.storeId = kiosk._id
         $products.append(newProduct)
         $kiosk.products.append(newProduct)
     }
 
     // Removes subscription for the kiosk products when the view is unloaded,
-    // this will remove the data associated to the subscription from the realm.
+    // this will remove the data associated with the subscription from the realm.
     func removeSubscription() async throws {
         let subs = realm.subscriptions
         try await subs.update {

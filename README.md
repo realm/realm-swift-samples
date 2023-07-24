@@ -14,8 +14,8 @@ You may find the [Quick Start - Realm Swift]( https://www.mongodb.com/docs/realm
 To learn more about using Realm with Atlas App Services, refer to the [Atlas Device Sync](https://www.mongodb.com/docs/realm/sdk/swift/sync/) and [connecting to Atlas App Services](https://www.mongodb.com/docs/realm/sdk/swift/app-services/) documentation.
 
 # Samples list
-* [`Sync connection state changes, Error handling, and Client reset Sample App`](https://github.com/realm/realm-swift-samples/tree/main/SyncConnectionStateErrorReset) - This project implements a simple example App which showcase the following use cases: 
-  * Listening user state changes (logged in, logout, or removed).
+* [`Sync connection state changes, Error handling, and Client reset Sample App`](https://github.com/realm/realm-swift-samples/tree/main/SyncConnectionStateErrorReset) - This project implements a simple example App which showcases the following use cases: 
+  * Listening for user state changes (logged in, logged out, or removed).
   * Listening if the underlying sync session state, is active, inactive or invalid.
   * Listening if the underlying sync session connection state is connecting, connected, disconnected.
   * Listening for sync errors using sync's error handler.

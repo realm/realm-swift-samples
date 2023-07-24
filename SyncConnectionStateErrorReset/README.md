@@ -2,9 +2,10 @@
 
 A skeleton app to be used as a reference for how to use the [Realm Swift SDK](https://www.mongodb.com/docs/realm/sdk/swift/).
 On the following project you see an example of the following use cases
-* Connection State Changes, User changes
-* Sync error handling
-* Client reset
+* Connection state changes.
+* User state changes.
+* Sync error handling.
+* Client reset.
 
 ## Relevant Files
 
@@ -22,8 +23,8 @@ On the following project you see an example of the following use cases
 
 ## Example use cases
 
-This project implements a simple example App which showcase the following use cases:
-* Listening user state changes (logged in, logout, or removed).
+This project implements a simple example App which showcases the following use cases:
+* Listening for user state changes (logged in, logged out, or removed).
 * Listening if the underlying sync session state, is active, inactive or invalid.
 * Listening if the underlying sync session connection state is connecting, connected, disconnected.
 * Listening for sync errors using sync's error handler.
@@ -54,12 +55,12 @@ To sync Realm data you must first:
 2. Enable [Email/Password Authentication](https://www.mongodb.com/docs/atlas/app-services/authentication/email-password/#std-label-email-password-authentication)
 3. [Enable Flexible Sync](https://www.mongodb.com/docs/atlas/app-services/sync/configure/enable-sync/) with **Development Mode** on.
     * When Development Mode is enabled, queryable fields will be added automatically.
-    * Queryable fields used in this app: `_id`, `storeId`
+    * Queryable fields used in this app: `_id`, `storeId`, `userId`.
 
 After running the client and seeing the available collections in Atlas, [set read/write permissions](https://www.mongodb.com/docs/atlas/app-services/rules/roles/#with-device-sync) for all collections.
 
 ### Run the SyncConnectionStateErrorReset project (SyncConnectionStateErrorReset.xcodeproj)
 
 1. Copy your [Atlas App ID](https://www.mongodb.com/docs/atlas/app-services/reference/find-your-project-or-app-id/#std-label-find-your-app-id) from the App Services UI.
-2. Paste the copied ID as the value of the existing variable `ATLAS_APP_ID` in `SyncConnectionStateErrorReset/AppManager.swift`:
+2. Paste the copied ID as the value of the existing variable `ATLAS_APP_ID` in `SyncConnectionStateErrorReset/Managers/AppManager.swift`:
 3. Run the example.

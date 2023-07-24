@@ -29,7 +29,7 @@ class RealmManager: ObservableObject {
     private var connectionToken: NSKeyValueObservation?
 
     // Set the flexible sync configuration for the realm, adding options for
-    // client reset and `initialSubscription`.
+    // `clientResetMode` and `initialSubscription`.
     func openRealmWithUser(_ user: User) async throws {
         // Setting the configuration with a client reset mode and an initial subscription.
         let configuration = user.flexibleSyncConfiguration(clientResetMode:
@@ -50,9 +50,10 @@ class RealmManager: ObservableObject {
         self.realm = realm
     }
 
-    // Initialise the connection listeners (Session state and Session connection state).
+    // Initialize the connection listeners (Session state and Session connection state).
     func initConnectionListeners(realm: Realm) throws {
-        connectionToken = realm.syncSession?.observe(\SyncSession.connectionState, options: [.initial]) { session, _ in
+        self.connectionToken = realm.syncSession?
+            .observe(\SyncSession.connectionState, options: [.initial]) { session, _ in
             self.connectionState = session.connectionState
             // Session state is not KVO Compliant, but we are checking and updating their
             // value when there is an update on the connection state.

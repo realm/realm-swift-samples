@@ -10,7 +10,7 @@
 		AC9B38D32A52D86A007DCD48 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B38D22A52D86A007DCD48 /* RealmManager.swift */; };
 		ACF753E02A52BC6A00A3E8B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ACF753DF2A52BC6A00A3E8B2 /* README.md */; };
 		ACFCB6392A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCB6382A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift */; };
-		ACFCB63B2A4B483E002E780A /* SyncConnectionStateErrorResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCB63A2A4B483E002E780A /* SyncConnectionStateErrorResetView.swift */; };
+		ACFCB63B2A4B483E002E780A /* AppViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCB63A2A4B483E002E780A /* AppViews.swift */; };
 		ACFCB63D2A4B483F002E780A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFCB63C2A4B483F002E780A /* Assets.xcassets */; };
 		ACFCB6412A4B483F002E780A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFCB6402A4B483F002E780A /* Preview Assets.xcassets */; };
 		ACFCB6492A4B48E7002E780A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ACFCB6482A4B48E7002E780A /* Realm */; };
@@ -24,7 +24,7 @@
 		ACF753DF2A52BC6A00A3E8B2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACFCB6352A4B483E002E780A /* SyncConnectionStateErrorReset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncConnectionStateErrorReset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFCB6382A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncConnectionStateErrorResetApp.swift; sourceTree = "<group>"; };
-		ACFCB63A2A4B483E002E780A /* SyncConnectionStateErrorResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncConnectionStateErrorResetView.swift; sourceTree = "<group>"; };
+		ACFCB63A2A4B483E002E780A /* AppViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViews.swift; sourceTree = "<group>"; };
 		ACFCB63C2A4B483F002E780A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACFCB63E2A4B483F002E780A /* SyncConnectionStateErrorReset.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyncConnectionStateErrorReset.entitlements; sourceTree = "<group>"; };
 		ACFCB6402A4B483F002E780A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 				ACF753E12A52BDB000A3E8B2 /* Managers */,
 				ACFCB64E2A4C5603002E780A /* Models */,
 				ACFCB6382A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift */,
-				ACFCB63A2A4B483E002E780A /* SyncConnectionStateErrorResetView.swift */,
+				ACFCB63A2A4B483E002E780A /* AppViews.swift */,
 				ACFCB63C2A4B483F002E780A /* Assets.xcassets */,
 				ACFCB63E2A4B483F002E780A /* SyncConnectionStateErrorReset.entitlements */,
 				ACFCB63F2A4B483F002E780A /* Preview Content */,
@@ -182,7 +182,7 @@
 				ACFCB64D2A4B493F002E780A /* Models.swift in Sources */,
 				ACFCB6502A4DC611002E780A /* AppManager.swift in Sources */,
 				AC9B38D32A52D86A007DCD48 /* RealmManager.swift in Sources */,
-				ACFCB63B2A4B483E002E780A /* SyncConnectionStateErrorResetView.swift in Sources */,
+				ACFCB63B2A4B483E002E780A /* AppViews.swift in Sources */,
 				ACFCB6392A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
