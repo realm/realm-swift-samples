@@ -17,7 +17,7 @@ On the following project you see an example of the following use cases
 │   ├── Models                                  (Includes all Realm models)
 │   │   ├── Models.swift
 │   ├── SyncConnectionStateErrorResetApp.swift  (App Entry)
-│   ├── SyncConnectionStateErrorResetView.swift (Example Views)
+│   ├── AppViews.swift                          (Example Views)
 └── other configuration files..
 ```
 
@@ -37,7 +37,7 @@ This project implements a simple example App which showcases the following use c
 * Setting the default logger to `.all`, showing all the sync and realm access logs.
 
 **Realm Details:**
-* RealmSwift v10.41.0
+* RealmSwift v10.41.1
 * Device Sync type: Flexible
 
 ## Version Support

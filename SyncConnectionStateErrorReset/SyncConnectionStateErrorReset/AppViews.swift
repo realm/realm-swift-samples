@@ -86,7 +86,7 @@ struct LoginView: View {
                         .disableAutocorrection(true)
                         .textInputAutocapitalization(.none)
                     SecureField("Password", text: $password)
-                        .textInputAutocapitalization(.none)
+                        .textInputAutocapitalization(.never)
                     Button("Log In") {
                         Task {
                             await appAuthManager.login(username: username, password: password)

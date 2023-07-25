@@ -19,7 +19,7 @@
 import Foundation
 import RealmSwift
 
-let applicationServiceId = "flexiblesyncapp-mgbxq"
+let applicationServiceId = "<ATLAS_APP_ID>"
 let realmApp = RealmSwift.App(id: applicationServiceId)
 
 class AppErrorManager: ObservableObject {
