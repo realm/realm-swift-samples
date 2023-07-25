@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AC9B38D32A52D86A007DCD48 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B38D22A52D86A007DCD48 /* RealmManager.swift */; };
-		ACF753E02A52BC6A00A3E8B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ACF753DF2A52BC6A00A3E8B2 /* README.md */; };
 		ACFCB6392A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCB6382A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift */; };
 		ACFCB63B2A4B483E002E780A /* AppViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCB63A2A4B483E002E780A /* AppViews.swift */; };
 		ACFCB63D2A4B483F002E780A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFCB63C2A4B483F002E780A /* Assets.xcassets */; };
@@ -166,7 +165,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF753E02A52BC6A00A3E8B2 /* README.md in Resources */,
 				ACFCB6412A4B483F002E780A /* Preview Assets.xcassets in Resources */,
 				ACFCB63D2A4B483F002E780A /* Assets.xcassets in Resources */,
 			);

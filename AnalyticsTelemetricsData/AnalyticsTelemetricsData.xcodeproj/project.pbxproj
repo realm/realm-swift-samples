@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AC17379D2A6FCEB6001C0DA3 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17379C2A6FCEB6001C0DA3 /* AnalyticsEvent.swift */; };
 		AC17379F2A6FCEF8001C0DA3 /* TelemetricData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17379E2A6FCEF8001C0DA3 /* TelemetricData.swift */; };
-		AC8419C22A5427620073EF23 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8419C12A5427620073EF23 /* README.md */; };
 		AC8419C52A54280F0073EF23 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AC8419C42A54280F0073EF23 /* Realm */; };
 		AC8419C72A54280F0073EF23 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC8419C62A54280F0073EF23 /* RealmSwift */; };
 		ACB013612A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB013572A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift */; };
@@ -33,6 +32,10 @@
 		ACB0135D2A5470AE00CB32FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACB0135F2A5470AE00CB32FB /* AnalyticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
 		ACB013602A5470AE00CB32FB /* TelemetricView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelemetricView.swift; sourceTree = "<group>"; };
+		ACBA29CE2A706040006D937F /* RealmAtlasDeviceSyncTelemetric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RealmAtlasDeviceSyncTelemetric.png; sourceTree = "<group>"; };
+		ACBA29CF2A706040006D937F /* RealmAtlasDeviceSyncAnalytics.charts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RealmAtlasDeviceSyncAnalytics.charts; sourceTree = "<group>"; };
+		ACBA29D02A706040006D937F /* RealmAtlasDeviceSyncAnalytics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RealmAtlasDeviceSyncAnalytics.png; sourceTree = "<group>"; };
+		ACBA29D12A706040006D937F /* RealmAtlasDeviceSyncTelemetric.charts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RealmAtlasDeviceSyncTelemetric.charts; sourceTree = "<group>"; };
 		ACF754082A52C21300A3E8B2 /* AnalyticsTelemetricsData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsTelemetricsData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,11 +101,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		ACBA29CD2A706040006D937F /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				ACBA29D02A706040006D937F /* RealmAtlasDeviceSyncAnalytics.png */,
+				ACBA29CF2A706040006D937F /* RealmAtlasDeviceSyncAnalytics.charts */,
+				ACBA29CE2A706040006D937F /* RealmAtlasDeviceSyncTelemetric.png */,
+				ACBA29D12A706040006D937F /* RealmAtlasDeviceSyncTelemetric.charts */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 		ACF753FF2A52C21300A3E8B2 = {
 			isa = PBXGroup;
 			children = (
 				AC8419C12A5427620073EF23 /* README.md */,
 				ACB013552A5470AE00CB32FB /* AnalyticsTelemetricsData */,
+				ACBA29CD2A706040006D937F /* Charts */,
 				ACF754092A52C21300A3E8B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,7 +197,6 @@
 			files = (
 				ACB013642A5470AE00CB32FB /* Assets.xcassets in Resources */,
 				ACB013652A5470AE00CB32FB /* Preview Assets.xcassets in Resources */,
-				AC8419C22A5427620073EF23 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +441,7 @@
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
 				kind = exactVersion;
-				version = 10.41.0;
+				version = 10.41.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

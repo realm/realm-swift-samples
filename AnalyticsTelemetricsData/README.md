@@ -22,7 +22,12 @@ On the following project you see an example of the following use cases
 │   │   ├── TelemetricVIew.swift                (Telemetric data sample view)
 │   ├── AnalyticsTelemetricsDataApp.swift       (App Entry)
 │   ├── AnalyticsTelemetricsDataView.swift      (Example Views)
-└── other configuration files..
+├── Charts                                      (Charts sample data)
+│   ├── RealmAtlasDeviceSyncAnalytics.png
+│   ├── RealmAtlasDeviceSyncAnalytics.charts
+│   ├── RealmAtlasDeviceSyncTelemetric.png
+│   └── RealmAtlasDeviceSyncTelemetric.charts  
+└──  other configuration files...    
 ```
 
 ## Scope
@@ -64,7 +69,7 @@ After running the client and seeing the available collections in Atlas, [set rea
 #### Analytics Example App
 
 1. Copy your [Atlas App ID](https://www.mongodb.com/docs/atlas/app-services/reference/find-your-project-or-app-id/#std-label-find-your-app-id) from the App Services UI.
-2. Paste the copied ID as the value of the existing variable `ATLAS_APP_ID` to `AnalyticsManager`.
+2. Paste the copied ID as the value of the existing variable `ANALYTICS_APP_ID` to `AnalyticsManager`.
 3. Get the `APIKey` from the App Services UI and paste it into `ANALYTICS_API_KEY` in `AnalyticsManager`.
 4. Run the example.
 5. Choose the Analytics Example in the initial view.
@@ -75,8 +80,8 @@ After running the client and seeing the available collections in Atlas, [set rea
 #### Telemetric Example App
 
 1. Copy your [Atlas App ID](https://www.mongodb.com/docs/atlas/app-services/reference/find-your-project-or-app-id/#std-label-find-your-app-id) from the App Services UI.
-2. Paste the copied ID as the value of the existing variable `ATLAS_APP_ID` to `TelemetricManager`.
-3. Get the `APIKey` from the App Services UI and paste it into `ANALYTICS_API_KEY` on `TelemetricManager`.
+2. Paste the copied ID as the value of the existing variable `TELEMETRIC_APP_ID` to `TelemetricManager`.
+3. Get the `APIKey` from the App Services UI and paste it into `TELEMETRIC_API_KEY` on `TelemetricManager`.
 4. Run the example.
 5. Choose the Telemetric Example on the initial view.
 5. Build an [Atlas Chart](https://www.mongodb.com/docs/charts/). 

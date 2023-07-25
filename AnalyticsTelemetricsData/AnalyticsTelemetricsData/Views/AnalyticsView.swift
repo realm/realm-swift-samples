@@ -38,8 +38,15 @@ struct AnalyticsView: View {
     }
 }
 
+// Struct for temporary storing current session events tracked
+struct EventListEvent: Hashable {
+    var id = UUID()
+    var label = ""
+    var eventType: AnalyticsType
+}
+
 struct TrackEventView: View {
-    @State var events: [String] = [String]()
+    @State var events: [EventListEvent] = []
 
     @State var label: String = ""
     @State var info: String = ""
@@ -64,7 +71,7 @@ struct TrackEventView: View {
                             Button("Track") {
                                 // Log an analytics event
                                 AnalyticsManager.shared.logEvent(category, label: label, info: ["extra": info])
-                                events.append(label)
+                                events.append(EventListEvent(label: label, eventType: category))
                                 label = ""
                                 info = ""
                                 category = .event
@@ -82,7 +89,11 @@ struct TrackEventView: View {
                     Text("Current tracked events")
                     // This shows only the events added filling the form and clicking the `Track`button.
                     List(events, id: \.self) { event in
-                        Text(event)
+                        HStack {
+                            Text(event.label)
+                            Spacer()
+                            Text(event.eventType.rawValue)
+                        }
                     }
                     // Log an event associated to a SwiftUI element appearing
                     .logEvent("list_appear")
