@@ -20,7 +20,7 @@ import RealmSwift
 import SwiftUI
 
 /**
- `TelemetricManager` wraps all the functionality for tracking data and send .
+ `TelemetricManager` wraps all the functionality to track data and send .
  */
 public class TelemetricManager {
     // Shared
@@ -35,7 +35,7 @@ public class TelemetricManager {
     private init() {}
 
     /**
-     Configures your App to be used with this manager, without this step we cannot log any data.
+     Configures your App to be used with this manager. Without this step we cannot log any data.
      */
     public func configure() async {
         do {
@@ -46,10 +46,10 @@ public class TelemetricManager {
     }
 
     /**
-     Logs an event which will dispatched to be synced.
+     Logs an event which will be synced to Atlas.
 
-     - parameter label: The label that uniquely identifies you data.
-     - parameter info: Extra info you want to add to your event, this info can help to categorise or provide specific
+     - parameter label: The label that uniquely identifies your data.
+     - parameter info: Extra info you want to add to your event. This info can help to categorize or provide specific
                        info which can be used later for reporting.
      */
     public func logData(_ label: String, info: [String: String]? = nil) {
@@ -102,12 +102,4 @@ extension TelemetricManager {
             eventQueue.append(data)
         }
     }
-}
-
-class TelemetricData: AsymmetricObject {
-    @Persisted(primaryKey: true) var _id: ObjectId
-    @Persisted var label: String
-    @Persisted var info: Map<String, String>
-    @Persisted var date: Date
-    @Persisted var location: String
 }

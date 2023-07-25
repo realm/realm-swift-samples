@@ -21,21 +21,6 @@ import SwiftUI
 import AppTrackingTransparency
 import AdSupport
 
-/// An enum representing different types of events that can be logged.
-public enum AnalyticsType: String, PersistableEnum, CaseIterable, Identifiable {
-    /// To be used when tracking a screen view.
-    case screenView = "screen_view"
-    /// To be used every time the user opens the app.  This is done automatically by `Analytics Manager`.
-    case sessionStart = "session_start"
-    /// To be used when tracking a click event over a UI element.
-    case click = "click"
-    /// To be used when tracking login to any service.
-    case login = "login"
-    /// To be used when tracking any other event.
-    case event = "event"
-
-    public var id: Self { self }
-}
 /**
  `RealmAnalytics` wraps all the functionality for logging data..
  */
@@ -55,23 +40,19 @@ public class AnalyticsManager {
     private init() {}
 
     /**
-     Configures your App to be used with this manager, without this step we cannot log any events.
+     Configures your App to be used with this manager. Without this step we cannot log any events.
      */
-    public func configure() async {
-        do {
-            try await self.setUpApp()
-        } catch {
-            print("Analytics Log Error: \(error)")
-        }
+    public func configure() async throws {
+        try await self.setUpApp()
     }
 
     /**
-     Logs an event which will dispatched to be synced.
+     Logs an event which will be synced to Atlas.
 
      - parameter type: The event type `AnalyticsType` you want to track.
-     - parameter label: The label that uniquely identifies you event, could be the name of the screen or the name
-                        of the event you want to track.
-     - parameter info: Extra info you want to add to your event, this info can help to categorise or provide specific
+     - parameter label: The label that uniquely identifies your event. This could be the name of the screen or
+                        the name of the event you want to track.
+     - parameter info: Extra info you want to add to your event. This info can help to categorize or provide specific
                        info which can be used later for reporting.
      */
     public func logEvent(_ type: AnalyticsType, label: String, info: [String: String]? = nil) {
@@ -157,10 +138,16 @@ extension AnalyticsManager {
 
     // Device Information
     private func requestDeviceUniqueId() async -> UUID? {
+        // To be able to access the device unique identifier you need to authorize the App
+        // Check https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager
+        // for more info.
         let status = await ATTrackingManager.requestTrackingAuthorization()
         switch status {
         case .authorized:
             print("Authorized")
+            // `advertisingIdentifier` is a unique identifier specific to the users device.
+            // Check https://developer.apple.com/documentation/adsupport/asidentifiermanager
+            // for more info.
             return ASIdentifierManager.shared().advertisingIdentifier
         default:
             print("Unknown")
@@ -187,28 +174,6 @@ extension AnalyticsManager {
     private func getPlatformVersion() -> String {
         return ProcessInfo.processInfo.operatingSystemVersionString
     }
-}
-
-class AnalyticsEvent: AsymmetricObject {
-    @Persisted(primaryKey: true) var _id: ObjectId
-    @Persisted var session: AnalyticsSession?
-    @Persisted var type: AnalyticsType
-    @Persisted var label: String
-    @Persisted var info: Map<String, String>
-    @Persisted var date: Date
-}
-
-class AnalyticsSession: EmbeddedObject {
-    @Persisted var deviceId: UUID
-    @Persisted var startDate: Date
-    @Persisted var metadata: AnalyticsMetadataInfo?
-}
-
-class AnalyticsMetadataInfo: EmbeddedObject {
-    @Persisted var appVersion: String
-    @Persisted var platform: String
-    @Persisted var platformVersion: String
-    @Persisted var location: String
 }
 
 // Swift UI Helpers
@@ -266,8 +231,8 @@ extension View {
     /**
      Append this to your `Button` view to log a click event when the button is clicked.
 
-     - parameter label: The label that uniquely identifies you click action.
-     - parameter info: Extra info you want to add to your event, this info can help to categorise or provide specific
+     - parameter label: The label that uniquely identifies your click action.
+     - parameter info: Extra info you want to add to your event. This info can help to categorize or provide specific
                        info which can be used later for reporting.
      */
     public func logClick(_ label: String, info: [String: String]? = nil) -> some View {
@@ -277,8 +242,8 @@ extension View {
     /**
      Append this to your view to log a screen view.
 
-     - parameter label: The label that uniquely identifies you screen view.
-     - parameter info: Extra info you want to add to your event, this info can help to categorise or provide specific
+     - parameter label: The label that uniquely identifies your screen view.
+     - parameter info: Extra info you want to add to your event. This info can help to categorize or provide specific
                        info which can be used later for reporting.
      */
     public func logScreen(_ label: String, info: [String: String]? = nil) -> some View {
@@ -289,7 +254,7 @@ extension View {
      Append this to any view to log an event when this view appears.
 
      - parameter label: The label that uniquely identifies your event.
-     - parameter info: Extra info you want to add to your event, this info can help to categorise or provide specific
+     - parameter info: Extra info you want to add to your event. This info can help to categorize or provide specific
                        info which can be used later for reporting.
      */
     public func logEvent(_ label: String, info: [String: String]? = nil) -> some View {

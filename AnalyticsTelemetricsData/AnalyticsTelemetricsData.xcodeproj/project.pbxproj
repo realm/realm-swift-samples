@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC17379D2A6FCEB6001C0DA3 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17379C2A6FCEB6001C0DA3 /* AnalyticsEvent.swift */; };
+		AC17379F2A6FCEF8001C0DA3 /* TelemetricData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17379E2A6FCEF8001C0DA3 /* TelemetricData.swift */; };
 		AC8419C22A5427620073EF23 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8419C12A5427620073EF23 /* README.md */; };
 		AC8419C52A54280F0073EF23 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AC8419C42A54280F0073EF23 /* Realm */; };
 		AC8419C72A54280F0073EF23 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC8419C62A54280F0073EF23 /* RealmSwift */; };
@@ -16,10 +18,12 @@
 		ACB013642A5470AE00CB32FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB0135B2A5470AE00CB32FB /* Assets.xcassets */; };
 		ACB013652A5470AE00CB32FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB0135D2A5470AE00CB32FB /* Preview Assets.xcassets */; };
 		ACB013662A5470AE00CB32FB /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0135F2A5470AE00CB32FB /* AnalyticsView.swift */; };
-		ACB013672A5470AE00CB32FB /* TelemetricVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB013602A5470AE00CB32FB /* TelemetricVIew.swift */; };
+		ACB013672A5470AE00CB32FB /* TelemetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB013602A5470AE00CB32FB /* TelemetricView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC17379C2A6FCEB6001C0DA3 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		AC17379E2A6FCEF8001C0DA3 /* TelemetricData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetricData.swift; sourceTree = "<group>"; };
 		AC8419C12A5427620073EF23 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACB013562A5470AE00CB32FB /* AnalyticsTelemetricsData.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = AnalyticsTelemetricsData.entitlements; sourceTree = "<group>"; };
 		ACB013572A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsTelemetricsDataApp.swift; sourceTree = "<group>"; };
@@ -28,7 +32,7 @@
 		ACB0135B2A5470AE00CB32FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB0135D2A5470AE00CB32FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACB0135F2A5470AE00CB32FB /* AnalyticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
-		ACB013602A5470AE00CB32FB /* TelemetricVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelemetricVIew.swift; sourceTree = "<group>"; };
+		ACB013602A5470AE00CB32FB /* TelemetricView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelemetricView.swift; sourceTree = "<group>"; };
 		ACF754082A52C21300A3E8B2 /* AnalyticsTelemetricsData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsTelemetricsData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -45,9 +49,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC17379B2A6FCEA5001C0DA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC17379C2A6FCEB6001C0DA3 /* AnalyticsEvent.swift */,
+				AC17379E2A6FCEF8001C0DA3 /* TelemetricData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ACB013552A5470AE00CB32FB /* AnalyticsTelemetricsData */ = {
 			isa = PBXGroup;
 			children = (
+				AC17379B2A6FCEA5001C0DA3 /* Models */,
 				ACB013582A5470AE00CB32FB /* Managers */,
 				ACB0135E2A5470AE00CB32FB /* Views */,
 				ACB013572A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift */,
@@ -79,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB0135F2A5470AE00CB32FB /* AnalyticsView.swift */,
-				ACB013602A5470AE00CB32FB /* TelemetricVIew.swift */,
+				ACB013602A5470AE00CB32FB /* TelemetricView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,7 +196,9 @@
 				ACB013632A5470AE00CB32FB /* AnalyticsManager.swift in Sources */,
 				ACB013662A5470AE00CB32FB /* AnalyticsView.swift in Sources */,
 				ACB013612A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift in Sources */,
-				ACB013672A5470AE00CB32FB /* TelemetricVIew.swift in Sources */,
+				AC17379D2A6FCEB6001C0DA3 /* AnalyticsEvent.swift in Sources */,
+				AC17379F2A6FCEF8001C0DA3 /* TelemetricData.swift in Sources */,
+				ACB013672A5470AE00CB32FB /* TelemetricView.swift in Sources */,
 				ACB013622A5470AE00CB32FB /* TelemetricManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

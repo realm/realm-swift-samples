@@ -19,13 +19,22 @@
 import SwiftUI
 
 struct AnalyticsView: View {
+    @State var errorMessage: String = ""
     var body: some View {
-        TrackEventView()
-            .onAppear {
-                Task {
-                    await AnalyticsManager.shared.configure()
+        VStack {
+            TrackEventView()
+                .onAppear {
+                    Task {
+                        do {
+                            try await AnalyticsManager.shared.configure()
+                        } catch {
+                            errorMessage = error.localizedDescription
+                        }
+                    }
                 }
-            }
+            Text("Error \(errorMessage)")
+                .foregroundStyle(.red)
+        }
     }
 }
 
@@ -69,11 +78,15 @@ struct TrackEventView: View {
                     }
                 }
                 Spacer()
-                List(events, id: \.self) { event in
-                    Text(event)
+                VStack {
+                    Text("Current tracked events")
+                    // This shows only the events added filling the form and clicking the `Track`button.
+                    List(events, id: \.self) { event in
+                        Text(event)
+                    }
+                    // Log an event associated to a SwiftUI element appearing
+                    .logEvent("list_appear")
                 }
-                // Log an event associated to a SwiftUI appearing
-                .logEvent("list_appear")
             }
         }
         .navigationBarTitle("Track Event View")

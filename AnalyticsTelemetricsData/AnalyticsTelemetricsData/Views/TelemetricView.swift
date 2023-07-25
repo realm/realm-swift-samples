@@ -40,10 +40,12 @@ enum Sensor: String, CaseIterable, Identifiable {
 struct TrackDataView: View {
     @State var sensor: Sensor = .sensor1
     @State var temperature: Int = 0
+    @State var isCelsius: Bool = false
 
     var body: some View {
         VStack {
             VStack {
+
                 Form {
                     Section {
                         Picker("Sensor", selection: $sensor) {
@@ -51,21 +53,28 @@ struct TrackDataView: View {
                                 Text("\($0.rawValue)")
                             }
                         }
-                        Picker("Temperature", selection: $temperature) {
-                            ForEach(0..<50) {
-                                Text("\($0)ºC")
+                        if isCelsius {
+                            Picker("Temperature", selection: $temperature) {
+                                ForEach(0..<50) {
+                                    Text("\($0) ºC")
+                                }
+                            }
+                        } else {
+                            Picker("Temperature", selection: $temperature) {
+                                ForEach(32..<122) {
+                                    Text("\($0) ºF")
+                                }
                             }
                         }
+                        Toggle("ºF/ºC", isOn: $isCelsius)
                     }
                     Section {
                         HStack {
                             Spacer()
-                            Button("Track Data") {
+                            Button("Track Temperature") {
                                 // Log an analytics event
                                 TelemetricManager.shared.logData(sensor.rawValue,
                                                                  info: ["temperature": "\(temperature)"])
-                                sensor = .sensor1
-                                temperature = 0
                             }
                             .buttonStyle(.bordered)
                             .cornerRadius(4)
@@ -75,6 +84,11 @@ struct TrackDataView: View {
                 }
             }
         }
-        .navigationBarTitle("Track Event View")
+        .navigationBarTitle("Telemetric Data View")
+    }
+
+    func resetData() {
+        sensor = .sensor1
+        temperature = 0
     }
 }
