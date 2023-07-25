@@ -7,139 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC9B38D32A52D86A007DCD48 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B38D22A52D86A007DCD48 /* RealmManager.swift */; };
-		ACFCB6392A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCB6382A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift */; };
-		ACFCB63B2A4B483E002E780A /* AppViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCB63A2A4B483E002E780A /* AppViews.swift */; };
-		ACFCB63D2A4B483F002E780A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFCB63C2A4B483F002E780A /* Assets.xcassets */; };
-		ACFCB6412A4B483F002E780A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFCB6402A4B483F002E780A /* Preview Assets.xcassets */; };
-		ACFCB6492A4B48E7002E780A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ACFCB6482A4B48E7002E780A /* Realm */; };
-		ACFCB64B2A4B48E7002E780A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ACFCB64A2A4B48E7002E780A /* RealmSwift */; };
-		ACFCB64D2A4B493F002E780A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCB64C2A4B493F002E780A /* Models.swift */; };
-		ACFCB6502A4DC611002E780A /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCB64F2A4DC611002E780A /* AppManager.swift */; };
+		AC17379D2A6FCEB6001C0DA3 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17379C2A6FCEB6001C0DA3 /* AnalyticsEvent.swift */; };
+		AC17379F2A6FCEF8001C0DA3 /* TelemetricData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17379E2A6FCEF8001C0DA3 /* TelemetricData.swift */; };
+		AC8419C52A54280F0073EF23 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AC8419C42A54280F0073EF23 /* Realm */; };
+		AC8419C72A54280F0073EF23 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC8419C62A54280F0073EF23 /* RealmSwift */; };
+		ACB013612A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB013572A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift */; };
+		ACB013622A5470AE00CB32FB /* TelemetricManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB013592A5470AE00CB32FB /* TelemetricManager.swift */; };
+		ACB013632A5470AE00CB32FB /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0135A2A5470AE00CB32FB /* AnalyticsManager.swift */; };
+		ACB013642A5470AE00CB32FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB0135B2A5470AE00CB32FB /* Assets.xcassets */; };
+		ACB013652A5470AE00CB32FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB0135D2A5470AE00CB32FB /* Preview Assets.xcassets */; };
+		ACB013662A5470AE00CB32FB /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0135F2A5470AE00CB32FB /* AnalyticsView.swift */; };
+		ACB013672A5470AE00CB32FB /* TelemetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB013602A5470AE00CB32FB /* TelemetricView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC9B38D22A52D86A007DCD48 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
-		ACF753DF2A52BC6A00A3E8B2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		ACFCB6352A4B483E002E780A /* SyncConnectionStateErrorReset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncConnectionStateErrorReset.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACFCB6382A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncConnectionStateErrorResetApp.swift; sourceTree = "<group>"; };
-		ACFCB63A2A4B483E002E780A /* AppViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViews.swift; sourceTree = "<group>"; };
-		ACFCB63C2A4B483F002E780A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACFCB63E2A4B483F002E780A /* SyncConnectionStateErrorReset.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyncConnectionStateErrorReset.entitlements; sourceTree = "<group>"; };
-		ACFCB6402A4B483F002E780A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ACFCB64C2A4B493F002E780A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		ACFCB64F2A4DC611002E780A /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		AC17379C2A6FCEB6001C0DA3 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		AC17379E2A6FCEF8001C0DA3 /* TelemetricData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetricData.swift; sourceTree = "<group>"; };
+		AC8419C12A5427620073EF23 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ACB013562A5470AE00CB32FB /* AnalyticsTelemetricsData.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = AnalyticsTelemetricsData.entitlements; sourceTree = "<group>"; };
+		ACB013572A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsTelemetricsDataApp.swift; sourceTree = "<group>"; };
+		ACB013592A5470AE00CB32FB /* TelemetricManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelemetricManager.swift; sourceTree = "<group>"; };
+		ACB0135A2A5470AE00CB32FB /* AnalyticsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		ACB0135B2A5470AE00CB32FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACB0135D2A5470AE00CB32FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACB0135F2A5470AE00CB32FB /* AnalyticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		ACB013602A5470AE00CB32FB /* TelemetricView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelemetricView.swift; sourceTree = "<group>"; };
+		ACBA29CE2A706040006D937F /* RealmAtlasDeviceSyncTelemetric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RealmAtlasDeviceSyncTelemetric.png; sourceTree = "<group>"; };
+		ACBA29CF2A706040006D937F /* RealmAtlasDeviceSyncAnalytics.charts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RealmAtlasDeviceSyncAnalytics.charts; sourceTree = "<group>"; };
+		ACBA29D02A706040006D937F /* RealmAtlasDeviceSyncAnalytics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RealmAtlasDeviceSyncAnalytics.png; sourceTree = "<group>"; };
+		ACBA29D12A706040006D937F /* RealmAtlasDeviceSyncTelemetric.charts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RealmAtlasDeviceSyncTelemetric.charts; sourceTree = "<group>"; };
+		ACF754082A52C21300A3E8B2 /* AnalyticsTelemetricsData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalyticsTelemetricsData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ACFCB6322A4B483E002E780A /* Frameworks */ = {
+		ACF754052A52C21300A3E8B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFCB64B2A4B48E7002E780A /* RealmSwift in Frameworks */,
-				ACFCB6492A4B48E7002E780A /* Realm in Frameworks */,
+				AC8419C72A54280F0073EF23 /* RealmSwift in Frameworks */,
+				AC8419C52A54280F0073EF23 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ACF753E12A52BDB000A3E8B2 /* Managers */ = {
+		AC17379B2A6FCEA5001C0DA3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				ACFCB64F2A4DC611002E780A /* AppManager.swift */,
-				AC9B38D22A52D86A007DCD48 /* RealmManager.swift */,
+				AC17379C2A6FCEB6001C0DA3 /* AnalyticsEvent.swift */,
+				AC17379E2A6FCEF8001C0DA3 /* TelemetricData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACB013552A5470AE00CB32FB /* AnalyticsTelemetricsData */ = {
+			isa = PBXGroup;
+			children = (
+				AC17379B2A6FCEA5001C0DA3 /* Models */,
+				ACB013582A5470AE00CB32FB /* Managers */,
+				ACB0135E2A5470AE00CB32FB /* Views */,
+				ACB013572A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift */,
+				ACB013562A5470AE00CB32FB /* AnalyticsTelemetricsData.entitlements */,
+				ACB0135B2A5470AE00CB32FB /* Assets.xcassets */,
+				ACB0135C2A5470AE00CB32FB /* Preview Content */,
+			);
+			path = AnalyticsTelemetricsData;
+			sourceTree = "<group>";
+		};
+		ACB013582A5470AE00CB32FB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ACB0135A2A5470AE00CB32FB /* AnalyticsManager.swift */,
+				ACB013592A5470AE00CB32FB /* TelemetricManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		ACFCB62C2A4B483E002E780A = {
+		ACB0135C2A5470AE00CB32FB /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				ACF753DF2A52BC6A00A3E8B2 /* README.md */,
-				ACFCB6372A4B483E002E780A /* SyncConnectionStateErrorReset */,
-				ACFCB6362A4B483E002E780A /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		ACFCB6362A4B483E002E780A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ACFCB6352A4B483E002E780A /* SyncConnectionStateErrorReset.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ACFCB6372A4B483E002E780A /* SyncConnectionStateErrorReset */ = {
-			isa = PBXGroup;
-			children = (
-				ACF753E12A52BDB000A3E8B2 /* Managers */,
-				ACFCB64E2A4C5603002E780A /* Models */,
-				ACFCB6382A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift */,
-				ACFCB63A2A4B483E002E780A /* AppViews.swift */,
-				ACFCB63C2A4B483F002E780A /* Assets.xcassets */,
-				ACFCB63E2A4B483F002E780A /* SyncConnectionStateErrorReset.entitlements */,
-				ACFCB63F2A4B483F002E780A /* Preview Content */,
-			);
-			path = SyncConnectionStateErrorReset;
-			sourceTree = "<group>";
-		};
-		ACFCB63F2A4B483F002E780A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				ACFCB6402A4B483F002E780A /* Preview Assets.xcassets */,
+				ACB0135D2A5470AE00CB32FB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		ACFCB64E2A4C5603002E780A /* Models */ = {
+		ACB0135E2A5470AE00CB32FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ACFCB64C2A4B493F002E780A /* Models.swift */,
+				ACB0135F2A5470AE00CB32FB /* AnalyticsView.swift */,
+				ACB013602A5470AE00CB32FB /* TelemetricView.swift */,
 			);
-			path = Models;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACBA29CD2A706040006D937F /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				ACBA29D02A706040006D937F /* RealmAtlasDeviceSyncAnalytics.png */,
+				ACBA29CF2A706040006D937F /* RealmAtlasDeviceSyncAnalytics.charts */,
+				ACBA29CE2A706040006D937F /* RealmAtlasDeviceSyncTelemetric.png */,
+				ACBA29D12A706040006D937F /* RealmAtlasDeviceSyncTelemetric.charts */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		ACF753FF2A52C21300A3E8B2 = {
+			isa = PBXGroup;
+			children = (
+				AC8419C12A5427620073EF23 /* README.md */,
+				ACB013552A5470AE00CB32FB /* AnalyticsTelemetricsData */,
+				ACBA29CD2A706040006D937F /* Charts */,
+				ACF754092A52C21300A3E8B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACF754092A52C21300A3E8B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACF754082A52C21300A3E8B2 /* AnalyticsTelemetricsData.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACFCB6342A4B483E002E780A /* SyncConnectionStateErrorReset */ = {
+		ACF754072A52C21300A3E8B2 /* AnalyticsTelemetricsData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACFCB6442A4B483F002E780A /* Build configuration list for PBXNativeTarget "SyncConnectionStateErrorReset" */;
+			buildConfigurationList = ACF754172A52C21400A3E8B2 /* Build configuration list for PBXNativeTarget "AnalyticsTelemetricsData" */;
 			buildPhases = (
-				ACFCB6312A4B483E002E780A /* Sources */,
-				ACFCB6322A4B483E002E780A /* Frameworks */,
-				ACFCB6332A4B483E002E780A /* Resources */,
+				ACF754042A52C21300A3E8B2 /* Sources */,
+				ACF754052A52C21300A3E8B2 /* Frameworks */,
+				ACF754062A52C21300A3E8B2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SyncConnectionStateErrorReset;
+			name = AnalyticsTelemetricsData;
 			packageProductDependencies = (
-				ACFCB6482A4B48E7002E780A /* Realm */,
-				ACFCB64A2A4B48E7002E780A /* RealmSwift */,
+				AC8419C42A54280F0073EF23 /* Realm */,
+				AC8419C62A54280F0073EF23 /* RealmSwift */,
 			);
-			productName = SyncConnectionStateErrorReset;
-			productReference = ACFCB6352A4B483E002E780A /* SyncConnectionStateErrorReset.app */;
+			productName = AnalyticsTelemetricsData;
+			productReference = ACF754082A52C21300A3E8B2 /* AnalyticsTelemetricsData.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ACFCB62D2A4B483E002E780A /* Project object */ = {
+		ACF754002A52C21300A3E8B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					ACFCB6342A4B483E002E780A = {
+					ACF754072A52C21300A3E8B2 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = ACFCB6302A4B483E002E780A /* Build configuration list for PBXProject "SyncConnectionStateErrorReset" */;
+			buildConfigurationList = ACF754032A52C21300A3E8B2 /* Build configuration list for PBXProject "AnalyticsTelemetricsData" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,48 +177,50 @@
 				en,
 				Base,
 			);
-			mainGroup = ACFCB62C2A4B483E002E780A;
+			mainGroup = ACF753FF2A52C21300A3E8B2;
 			packageReferences = (
-				ACFCB6472A4B48E7002E780A /* XCRemoteSwiftPackageReference "realm-swift" */,
+				AC8419C32A54280E0073EF23 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
-			productRefGroup = ACFCB6362A4B483E002E780A /* Products */;
+			productRefGroup = ACF754092A52C21300A3E8B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACFCB6342A4B483E002E780A /* SyncConnectionStateErrorReset */,
+				ACF754072A52C21300A3E8B2 /* AnalyticsTelemetricsData */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ACFCB6332A4B483E002E780A /* Resources */ = {
+		ACF754062A52C21300A3E8B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFCB6412A4B483F002E780A /* Preview Assets.xcassets in Resources */,
-				ACFCB63D2A4B483F002E780A /* Assets.xcassets in Resources */,
+				ACB013642A5470AE00CB32FB /* Assets.xcassets in Resources */,
+				ACB013652A5470AE00CB32FB /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ACFCB6312A4B483E002E780A /* Sources */ = {
+		ACF754042A52C21300A3E8B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFCB64D2A4B493F002E780A /* Models.swift in Sources */,
-				ACFCB6502A4DC611002E780A /* AppManager.swift in Sources */,
-				AC9B38D32A52D86A007DCD48 /* RealmManager.swift in Sources */,
-				ACFCB63B2A4B483E002E780A /* AppViews.swift in Sources */,
-				ACFCB6392A4B483E002E780A /* SyncConnectionStateErrorResetApp.swift in Sources */,
+				ACB013632A5470AE00CB32FB /* AnalyticsManager.swift in Sources */,
+				ACB013662A5470AE00CB32FB /* AnalyticsView.swift in Sources */,
+				ACB013612A5470AE00CB32FB /* AnalyticsTelemetricsDataApp.swift in Sources */,
+				AC17379D2A6FCEB6001C0DA3 /* AnalyticsEvent.swift in Sources */,
+				AC17379F2A6FCEF8001C0DA3 /* TelemetricData.swift in Sources */,
+				ACB013672A5470AE00CB32FB /* TelemetricView.swift in Sources */,
+				ACB013622A5470AE00CB32FB /* TelemetricManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		ACFCB6422A4B483F002E780A /* Debug */ = {
+		ACF754152A52C21400A3E8B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +281,7 @@
 			};
 			name = Debug;
 		};
-		ACFCB6432A4B483F002E780A /* Release */ = {
+		ACF754162A52C21400A3E8B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,17 +334,18 @@
 			};
 			name = Release;
 		};
-		ACFCB6452A4B483F002E780A /* Debug */ = {
+		ACF754182A52C21400A3E8B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SyncConnectionStateErrorReset/SyncConnectionStateErrorReset.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AnalyticsTelemetricsData/AnalyticsTelemetricsData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SyncConnectionStateErrorReset/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AnalyticsTelemetricsData/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -328,7 +361,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.realm.curatedExamples.syncConnectionStateErrorReset.SyncConnectionStateErrorReset;
+				PRODUCT_BUNDLE_IDENTIFIER = io.realm.curatedExamples.analyticsTelemetricsData.AnalyticsTelemetricsData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -340,17 +373,18 @@
 			};
 			name = Debug;
 		};
-		ACFCB6462A4B483F002E780A /* Release */ = {
+		ACF754192A52C21400A3E8B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SyncConnectionStateErrorReset/SyncConnectionStateErrorReset.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AnalyticsTelemetricsData/AnalyticsTelemetricsData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SyncConnectionStateErrorReset/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AnalyticsTelemetricsData/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -366,7 +400,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.realm.curatedExamples.syncConnectionStateErrorReset.SyncConnectionStateErrorReset;
+				PRODUCT_BUNDLE_IDENTIFIER = io.realm.curatedExamples.analyticsTelemetricsData.AnalyticsTelemetricsData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -381,20 +415,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACFCB6302A4B483E002E780A /* Build configuration list for PBXProject "SyncConnectionStateErrorReset" */ = {
+		ACF754032A52C21300A3E8B2 /* Build configuration list for PBXProject "AnalyticsTelemetricsData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACFCB6422A4B483F002E780A /* Debug */,
-				ACFCB6432A4B483F002E780A /* Release */,
+				ACF754152A52C21400A3E8B2 /* Debug */,
+				ACF754162A52C21400A3E8B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACFCB6442A4B483F002E780A /* Build configuration list for PBXNativeTarget "SyncConnectionStateErrorReset" */ = {
+		ACF754172A52C21400A3E8B2 /* Build configuration list for PBXNativeTarget "AnalyticsTelemetricsData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACFCB6452A4B483F002E780A /* Debug */,
-				ACFCB6462A4B483F002E780A /* Release */,
+				ACF754182A52C21400A3E8B2 /* Debug */,
+				ACF754192A52C21400A3E8B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -402,7 +436,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ACFCB6472A4B48E7002E780A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		AC8419C32A54280E0073EF23 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
@@ -413,17 +447,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ACFCB6482A4B48E7002E780A /* Realm */ = {
+		AC8419C42A54280F0073EF23 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ACFCB6472A4B48E7002E780A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = AC8419C32A54280E0073EF23 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
-		ACFCB64A2A4B48E7002E780A /* RealmSwift */ = {
+		AC8419C62A54280F0073EF23 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ACFCB6472A4B48E7002E780A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = AC8419C32A54280E0073EF23 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = ACFCB62D2A4B483E002E780A /* Project object */;
+	rootObject = ACF754002A52C21300A3E8B2 /* Project object */;
 }

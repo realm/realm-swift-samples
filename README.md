@@ -20,3 +20,10 @@ To learn more about using Realm with Atlas App Services, refer to the [Atlas Dev
   * Listening if the underlying sync session connection state is connecting, connected, disconnected.
   * Listening for sync errors using sync's error handler.
   * Listening for pre and post client resets blocks with `.recoverOrDiscardUnsyncedChanges` mode.
+  
+* [`Analytics/Telemetric Data`](https://github.com/realm/realm-swift-samples/tree/main/AnalyticsTelemetricsData) -The app addresses the following points:
+  * Use asymmetric sync to be able to send data uni-directionally to MongoDB Atlas.
+  * Configure an App to be able to send asymmetric data.
+  * Be able to send events/data easily/fast during the app life cycle.
+  * Track easily events/screen views/clicks on a SwiftUI context.
+  * Model data to be displayable in MongoDB Charts.
