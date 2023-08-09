@@ -32,21 +32,25 @@ class RealmManager: ObservableObject {
             subs.append(QuerySubscription<Book> { $0.isPublic || $0.userId == user.id })
         })
 
-        // Setting the download configuration to `.once` will wait to sync data only the first time the realm
-        // is opened, otherwise this will open the realm immediately and will sync any data on the background
-        // if connected.
+        // Setting the download configuration to `.always` will wait to sync data on every realm open.
         do {
-            // In case you want to sync your Device Sync data on every realm open, you can change this
-            // to `.always`, which in case of no internet connection will throw into opening the realm
-            // offline,
-            let realm = try await Realm(configuration: configuration, downloadBeforeOpen: .once)
-        } catch {
-            // In case there is an issue on the first sync, we will try to open the realm without
+            // If you want to sync your Device Sync data only the very first time the realm
+            // is opened, change to `.once`.
+            self.realm = try await Realm(configuration: configuration, downloadBeforeOpen: .always)
+            return
+            // If there is no internet connection, we continue to try to open the realm without syncing.
+        } catch {}
+
+        do {
+            // If there is an issue on the first sync, we will try to open the realm without
             // syncing any data even on the first open.
-            // This will throw in case of the error been related to the configuration.
-            let realm = try await Realm(configuration: configuration, downloadBeforeOpen: .never)
+            // This will throw if the error is related to the configuration.
+            self.realm = try await Realm(configuration: configuration, downloadBeforeOpen: .never)
+        } catch {
+            // If there is other error which doesn't allow us to open the realm even without syncing,
+            // we print an error.
+            print("There was an error opening the realm: \(error.localizedDescription)")
         }
-        self.realm = realm
     }
 
     func reset() {

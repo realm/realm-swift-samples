@@ -25,8 +25,8 @@ The app addresses the following points:
 * Opening a Realm with and without and internet connection.
 * Add an initial flexible sync subscription, which executes when opening a 
   realm for the very first time, even if offline.
-* Logging out a Device Sync user and resetting your SwiftUI's associated Realm when doing so.
-
+* Logging out a Device Sync user and resetting your SwiftUI's associated Realm 
+  when doing so.
 * Setting the default logger to `.all`, showing all the sync and realm access logs.
 
 **Realm Details:**
@@ -45,7 +45,7 @@ The app addresses the following points:
 To sync Realm data you must first:
 
 1. [Create an App Services App](https://www.mongodb.com/docs/atlas/app-services/manage-apps/create/create-with-ui/)
-2. Enable [API Key Authentication](https://www.mongodb.com/docs/atlas/app-services/authentication/api-key/)
+2. Enable [Email/Password Authentication](https://www.mongodb.com/docs/atlas/app-services/authentication/email-password/#std-label-email-password-authentication).
 3. [Enable Flexible Sync](https://www.mongodb.com/docs/atlas/app-services/sync/configure/enable-sync/) with **Development Mode** on.
     * When Development Mode is enabled, the schema is added automatically when the 
       app is running.

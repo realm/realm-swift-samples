@@ -78,24 +78,30 @@ struct LoginView: View {
                         .textInputAutocapitalization(.none)
                     SecureField("Password", text: $password)
                         .textInputAutocapitalization(.never)
-                    Button("Log In") {
-                        Task {
-                            let credentials = Credentials.emailPassword(email: username, password: password)
-                            await appAuthManager.login(credentials: credentials)
+                    VStack {
+                        Button("Log In") {
+                            Task {
+                                let credentials = Credentials.emailPassword(email: username, password: password)
+                                await appAuthManager.login(credentials: credentials)
+                            }
                         }
-                    }
-                    .disabled(username.isEmpty || password.isEmpty)
-                    Button("Log In Anonymously") {
-                        Task {
-                            await appAuthManager.login(credentials: .anonymous)
+                        .disabled(username.isEmpty || password.isEmpty)
+                        .padding(5)
+                        Button("Sign Up") {
+                            Task {
+                                await appAuthManager.register(username: username, password: password)
+                            }
                         }
-                    }
-                    Button("Sign Up") {
-                        Task {
-                            await appAuthManager.register(username: username, password: password)
+                        .disabled(username.isEmpty || password.isEmpty)
+                        .padding(5)
+                        // Anonymous login will allow you to see public books shared by other users.
+                        Button("Log In Anonymously") {
+                            Task {
+                                await appAuthManager.login(credentials: .anonymous)
+                            }
                         }
+                        .padding(5)
                     }
-                    .disabled(username.isEmpty || password.isEmpty)
                 }
                 Spacer()
                 VStack {
@@ -178,6 +184,7 @@ struct BookLibraryView: View {
         newBook.userId = user.id
         newBook.isPublic = false
         $books.append(newBook)
+        text = ""
     }
 }
 

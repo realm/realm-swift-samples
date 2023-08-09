@@ -19,7 +19,7 @@
 import Foundation
 import RealmSwift
 
-let applicationServiceId = "<ATLAS_APP_ID>"
+let applicationServiceId = "flexiblesyncapp-mgbxq"
 let realmApp = RealmSwift.App(id: applicationServiceId)
 
 class AppAuthManager: ObservableObject {
@@ -51,7 +51,7 @@ class AppAuthManager: ObservableObject {
         isLoading = false
     }
 
-    // Function to login a user with email and password, this will return the user if the login
+    // Function to login a user with email and password. This will return the user if the login
     // is successful or will update the error message on the UI in case of an error otherwise.
     // Access tokens are created once a user logs in. These tokens are refreshed
     // automatically by the SDK when needed. Manually refreshing the token is only
@@ -61,6 +61,8 @@ class AppAuthManager: ObservableObject {
     // By default, refresh tokens expire 60 days after they are issued. You can configure this
     // time for your App's refresh tokens to be anywhere between 30 minutes and 180 days. See:
     // https://www.mongodb.com/docs/atlas/app-services/users/sessions/#configure-refresh-token-expiration
+    // When the refresh token expires, the user must login again, and an error is throw in the
+    // sync manager's `errorHandler`.
     @MainActor
     func login(credentials: Credentials) async {
         cleanMessages()
