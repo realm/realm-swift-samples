@@ -24,7 +24,7 @@ struct ContentView: View {
     @ObservedObject var app: RealmSwift.App
 
     var body: some View {
-        // This observes changes on the App,and will trigger if the user state changes
+        // This observes changes on the App, and will trigger if the user state changes
         // during the app cycle of the App.
         // This is needed at least once in the app cycle. Realm will persist the current user
         // after logged in and will be able to access the user's realm, even if offline, later on.
@@ -40,7 +40,7 @@ struct ContentView: View {
                             Task {
                                 do {
                                     // Opens the realm asynchronously, only syncing the first time.
-                                    // In case of been offline, this will open the realm without
+                                    // If the device is offline, this will open the realm without
                                     // syncing any initial data.
                                     try await realmManager.openRealmWithUser(user)
                                 } catch {

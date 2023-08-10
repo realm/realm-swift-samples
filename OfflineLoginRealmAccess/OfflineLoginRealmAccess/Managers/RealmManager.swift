@@ -47,8 +47,8 @@ class RealmManager: ObservableObject {
             // This will throw if the error is related to the configuration.
             self.realm = try await Realm(configuration: configuration, downloadBeforeOpen: .never)
         } catch {
-            // If there is other error which doesn't allow us to open the realm even without syncing,
-            // we print an error.
+            // If there is a different error which doesn't allow us to open the realm even without syncing,
+            // we print the error.
             print("There was an error opening the realm: \(error.localizedDescription)")
         }
     }
