@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACB176FD2A70022D0072190D /* OfflineLoginRealmAccessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB176FC2A70022D0072190D /* OfflineLoginRealmAccessApp.swift */; };
+		ACB176FF2A70022D0072190D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB176FE2A70022D0072190D /* ContentView.swift */; };
+		ACB177012A7002300072190D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB177002A7002300072190D /* Assets.xcassets */; };
+		ACB177042A7002300072190D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB177032A7002300072190D /* Preview Assets.xcassets */; };
+		ACB1770C2A7003FB0072190D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ACB1770B2A7003FB0072190D /* Realm */; };
+		ACB1770E2A7003FB0072190D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ACB1770D2A7003FB0072190D /* RealmSwift */; };
+		ACB177112A7005140072190D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ACB177102A7005140072190D /* README.md */; };
+		ACB177142A7007AE0072190D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB177132A7007AE0072190D /* Models.swift */; };
+		ACD62FA92A7029C7000823A1 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62FA82A7029C7000823A1 /* AppManager.swift */; };
+		ACD62FAC2A702A43000823A1 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD62FAB2A702A43000823A1 /* RealmManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ACB176F92A70022D0072190D /* OfflineLoginRealmAccess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflineLoginRealmAccess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB176FC2A70022D0072190D /* OfflineLoginRealmAccessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineLoginRealmAccessApp.swift; sourceTree = "<group>"; };
+		ACB176FE2A70022D0072190D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACB177002A7002300072190D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACB177032A7002300072190D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACB177102A7005140072190D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ACB177132A7007AE0072190D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		ACD62FA82A7029C7000823A1 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		ACD62FAB2A702A43000823A1 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACB176F62A70022D0072190D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB1770E2A7003FB0072190D /* RealmSwift in Frameworks */,
+				ACB1770C2A7003FB0072190D /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACB176F02A70022D0072190D = {
+			isa = PBXGroup;
+			children = (
+				ACB177102A7005140072190D /* README.md */,
+				ACB176FB2A70022D0072190D /* OfflineLoginRealmAccess */,
+				ACB176FA2A70022D0072190D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACB176FA2A70022D0072190D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACB176F92A70022D0072190D /* OfflineLoginRealmAccess.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACB176FB2A70022D0072190D /* OfflineLoginRealmAccess */ = {
+			isa = PBXGroup;
+			children = (
+				ACB1770F2A7004050072190D /* Managers */,
+				ACB177122A7007A30072190D /* Models */,
+				ACB176FC2A70022D0072190D /* OfflineLoginRealmAccessApp.swift */,
+				ACB176FE2A70022D0072190D /* ContentView.swift */,
+				ACB177002A7002300072190D /* Assets.xcassets */,
+				ACB177022A7002300072190D /* Preview Content */,
+			);
+			path = OfflineLoginRealmAccess;
+			sourceTree = "<group>";
+		};
+		ACB177022A7002300072190D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACB177032A7002300072190D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACB1770F2A7004050072190D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ACD62FA82A7029C7000823A1 /* AppManager.swift */,
+				ACD62FAB2A702A43000823A1 /* RealmManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		ACB177122A7007A30072190D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACB177132A7007AE0072190D /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACB176F82A70022D0072190D /* OfflineLoginRealmAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACB177072A7002300072190D /* Build configuration list for PBXNativeTarget "OfflineLoginRealmAccess" */;
+			buildPhases = (
+				ACB176F52A70022D0072190D /* Sources */,
+				ACB176F62A70022D0072190D /* Frameworks */,
+				ACB176F72A70022D0072190D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OfflineLoginRealmAccess;
+			packageProductDependencies = (
+				ACB1770B2A7003FB0072190D /* Realm */,
+				ACB1770D2A7003FB0072190D /* RealmSwift */,
+			);
+			productName = OfflineLoginRealmAccess;
+			productReference = ACB176F92A70022D0072190D /* OfflineLoginRealmAccess.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACB176F12A70022D0072190D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					ACB176F82A70022D0072190D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = ACB176F42A70022D0072190D /* Build configuration list for PBXProject "OfflineLoginRealmAccess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACB176F02A70022D0072190D;
+			packageReferences = (
+				ACB1770A2A7003FB0072190D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = ACB176FA2A70022D0072190D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACB176F82A70022D0072190D /* OfflineLoginRealmAccess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACB176F72A70022D0072190D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB177112A7005140072190D /* README.md in Resources */,
+				ACB177042A7002300072190D /* Preview Assets.xcassets in Resources */,
+				ACB177012A7002300072190D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACB176F52A70022D0072190D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB177142A7007AE0072190D /* Models.swift in Sources */,
+				ACB176FF2A70022D0072190D /* ContentView.swift in Sources */,
+				ACD62FAC2A702A43000823A1 /* RealmManager.swift in Sources */,
+				ACB176FD2A70022D0072190D /* OfflineLoginRealmAccessApp.swift in Sources */,
+				ACD62FA92A7029C7000823A1 /* AppManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ACB177052A7002300072190D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACB177062A7002300072190D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACB177082A7002300072190D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OfflineLoginRealmAccess/Preview Content\"";
+				DEVELOPMENT_TEAM = 74HX4QV25A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.realm.curatedExamples.offlineLoginRealmAccess.OfflineLoginRealmAccess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACB177092A7002300072190D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OfflineLoginRealmAccess/Preview Content\"";
+				DEVELOPMENT_TEAM = 74HX4QV25A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.realm.curatedExamples.offlineLoginRealmAccess.OfflineLoginRealmAccess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACB176F42A70022D0072190D /* Build configuration list for PBXProject "OfflineLoginRealmAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB177052A7002300072190D /* Debug */,
+				ACB177062A7002300072190D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACB177072A7002300072190D /* Build configuration list for PBXNativeTarget "OfflineLoginRealmAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB177082A7002300072190D /* Debug */,
+				ACB177092A7002300072190D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACB1770A2A7003FB0072190D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 10.42.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACB1770B2A7003FB0072190D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACB1770A2A7003FB0072190D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		ACB1770D2A7003FB0072190D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACB1770A2A7003FB0072190D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ACB176F12A70022D0072190D /* Project object */;
+}
