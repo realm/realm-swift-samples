@@ -22,6 +22,7 @@ On the following project you see an example of the following use cases
 
 The app addresses the following points:
 * Register/Login a Device Sync user.
+* Access a already logged user without an internet connection.
 * Opening a Realm with and without and internet connection.
 * Add an initial flexible sync subscription, which executes when opening a 
   realm for the very first time, even if offline.
