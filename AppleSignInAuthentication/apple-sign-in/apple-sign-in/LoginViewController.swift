@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
         setupAppleSignInButton()
     }
 
+    // Function that creates an Apple Sign In button and is of type ASAuthorizationAppleIDButton
     private func setupAppleSignInButton() {
         appleSignInButton.addTarget(self, action: #selector(handleAppleIdRequest), for: .touchUpInside)
         appleSignInButton.cornerRadius = 10
