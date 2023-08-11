@@ -37,7 +37,8 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: ASAuthorizationControllerDelegate {
     // Delegate that handles successful Sign In
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+    func authorizationController(controller: ASAuthorizationController,
+                                 didCompleteWithAuthorization authorization: ASAuthorization) {
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             let userIdentifier = appleIDCredential.user
             let fullName = appleIDCredential.fullName
@@ -51,7 +52,8 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
 
             print(decodedToken)
 
-            // Note: If the user decides to hide their email on authentication, full name will return an empty string and email will be nil
+            // Note: If the user decides to hide their email on authentication,
+            // full name will return an empty string and email will be nil
 
             // Retrieve AppleID token so I can send it to Realm and authenticate myself
             realmSignIn(appleToken: decodedToken)
@@ -71,13 +73,12 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
             switch result {
             case .failure(let error):
                 print("Realm Login failed: \(error.localizedDescription)")
-            case .success(_):
+            case .success(let realm):
                 DispatchQueue.main.async {
-                    print("Successful Login")
+                    print("Successful Login for realm \(realm)")
                     self.performSegue(withIdentifier: "goToWelcomeViewController", sender: nil)
                 }
             }
         }
     }
 }
-
