@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-let app = App(id: "")
+let app = App(id: "<ATLAS_APP_ID>")
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
