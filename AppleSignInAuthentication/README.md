@@ -22,7 +22,7 @@ In this project you will be able to see an example of the following use case
 * Store user information securely in Realm database.
 
 **Realm Details:**
-* RealmSwift v10.34.1
+* RealmSwift v10.42.0
 
 ## Version Support
 
