@@ -53,8 +53,13 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
 
             print(decodedToken)
 
-            // Note: If the user decides to hide their email on authentication,
-            // full name will return an empty string and email will be nil
+            /*
+             Note: If the user decides to hide their email on authentication,
+             full name will return an empty string and email will be nil
+             This is due to Apple's privacy settings, it the developer wants to interact with the user's email,
+             it needs to be done through Apple's private email relay service
+             https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/communicating_using_the_private_email_relay_service
+             */
 
             // Retrieve AppleID token so I can send it to Realm and authenticate myself
             realmSignIn(appleToken: decodedToken)
