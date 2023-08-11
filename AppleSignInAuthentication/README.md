@@ -6,7 +6,6 @@ In this project you will be able to see an example of the following use case
 	* Log screen view in UIKit.
 	* Authenticate users in Realm using the Swift SDK.
 
-
 ## Relevant Files
 ```
 ├── AppDelegate.swift
@@ -18,7 +17,7 @@ In this project you will be able to see an example of the following use case
 
 * Create an iOS app in Swift using Xcode.
 * Integrate RealmSwift framework for database management.
-* Implement Apple Sign-In authentication.
+* Implement [Apple Sign-In authentication](https://developer.apple.com/documentation/authenticationservices).
 * Store user information securely in Realm database.
 
 **Realm Details:**
