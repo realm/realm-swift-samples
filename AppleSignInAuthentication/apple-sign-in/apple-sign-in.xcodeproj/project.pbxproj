@@ -13,29 +13,9 @@
 		3E86D062297AD70E007103B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E86D060297AD70E007103B6 /* Main.storyboard */; };
 		3E86D064297AD710007103B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E86D063297AD710007103B6 /* Assets.xcassets */; };
 		3E86D067297AD710007103B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E86D065297AD710007103B6 /* LaunchScreen.storyboard */; };
-		3E86D072297AD710007103B6 /* apple_sign_inTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E86D071297AD710007103B6 /* apple_sign_inTests.swift */; };
-		3E86D07C297AD710007103B6 /* apple_sign_inUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E86D07B297AD710007103B6 /* apple_sign_inUITests.swift */; };
-		3E86D07E297AD710007103B6 /* apple_sign_inUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E86D07D297AD710007103B6 /* apple_sign_inUITestsLaunchTests.swift */; };
 		3E86D08D298169CC007103B6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3E86D08C298169CC007103B6 /* Realm */; };
 		3E86D08F298169CC007103B6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3E86D08E298169CC007103B6 /* RealmSwift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3E86D06E297AD710007103B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E86D04F297AD70E007103B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E86D056297AD70E007103B6;
-			remoteInfo = "apple-sign-in";
-		};
-		3E86D078297AD710007103B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E86D04F297AD70E007103B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E86D056297AD70E007103B6;
-			remoteInfo = "apple-sign-in";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3E86D057297AD70E007103B6 /* apple-sign-in.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apple-sign-in.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,11 +26,6 @@
 		3E86D063297AD710007103B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E86D066297AD710007103B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E86D068297AD710007103B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E86D06D297AD710007103B6 /* apple-sign-inTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "apple-sign-inTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E86D071297AD710007103B6 /* apple_sign_inTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_sign_inTests.swift; sourceTree = "<group>"; };
-		3E86D077297AD710007103B6 /* apple-sign-inUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "apple-sign-inUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E86D07B297AD710007103B6 /* apple_sign_inUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_sign_inUITests.swift; sourceTree = "<group>"; };
-		3E86D07D297AD710007103B6 /* apple_sign_inUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_sign_inUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3E86D08A297E8D69007103B6 /* apple-sign-in.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "apple-sign-in.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,20 +39,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E86D06A297AD710007103B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E86D074297AD710007103B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				3E86D059297AD70E007103B6 /* apple-sign-in */,
-				3E86D070297AD710007103B6 /* apple-sign-inTests */,
-				3E86D07A297AD710007103B6 /* apple-sign-inUITests */,
 				3E86D058297AD70E007103B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				3E86D057297AD70E007103B6 /* apple-sign-in.app */,
-				3E86D06D297AD710007103B6 /* apple-sign-inTests.xctest */,
-				3E86D077297AD710007103B6 /* apple-sign-inUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,23 +71,6 @@
 				3E86D068297AD710007103B6 /* Info.plist */,
 			);
 			path = "apple-sign-in";
-			sourceTree = "<group>";
-		};
-		3E86D070297AD710007103B6 /* apple-sign-inTests */ = {
-			isa = PBXGroup;
-			children = (
-				3E86D071297AD710007103B6 /* apple_sign_inTests.swift */,
-			);
-			path = "apple-sign-inTests";
-			sourceTree = "<group>";
-		};
-		3E86D07A297AD710007103B6 /* apple-sign-inUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3E86D07B297AD710007103B6 /* apple_sign_inUITests.swift */,
-				3E86D07D297AD710007103B6 /* apple_sign_inUITestsLaunchTests.swift */,
-			);
-			path = "apple-sign-inUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,42 +97,6 @@
 			productReference = 3E86D057297AD70E007103B6 /* apple-sign-in.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3E86D06C297AD710007103B6 /* apple-sign-inTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E86D084297AD710007103B6 /* Build configuration list for PBXNativeTarget "apple-sign-inTests" */;
-			buildPhases = (
-				3E86D069297AD710007103B6 /* Sources */,
-				3E86D06A297AD710007103B6 /* Frameworks */,
-				3E86D06B297AD710007103B6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3E86D06F297AD710007103B6 /* PBXTargetDependency */,
-			);
-			name = "apple-sign-inTests";
-			productName = "apple-sign-inTests";
-			productReference = 3E86D06D297AD710007103B6 /* apple-sign-inTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3E86D076297AD710007103B6 /* apple-sign-inUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E86D087297AD710007103B6 /* Build configuration list for PBXNativeTarget "apple-sign-inUITests" */;
-			buildPhases = (
-				3E86D073297AD710007103B6 /* Sources */,
-				3E86D074297AD710007103B6 /* Frameworks */,
-				3E86D075297AD710007103B6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3E86D079297AD710007103B6 /* PBXTargetDependency */,
-			);
-			name = "apple-sign-inUITests";
-			productName = "apple-sign-inUITests";
-			productReference = 3E86D077297AD710007103B6 /* apple-sign-inUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,14 +109,6 @@
 				TargetAttributes = {
 					3E86D056297AD70E007103B6 = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					3E86D06C297AD710007103B6 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 3E86D056297AD70E007103B6;
-					};
-					3E86D076297AD710007103B6 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 3E86D056297AD70E007103B6;
 					};
 				};
 			};
@@ -233,8 +129,6 @@
 			projectRoot = "";
 			targets = (
 				3E86D056297AD70E007103B6 /* apple-sign-in */,
-				3E86D06C297AD710007103B6 /* apple-sign-inTests */,
-				3E86D076297AD710007103B6 /* apple-sign-inUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,20 +141,6 @@
 				3E86D067297AD710007103B6 /* LaunchScreen.storyboard in Resources */,
 				3E86D064297AD710007103B6 /* Assets.xcassets in Resources */,
 				3E86D062297AD70E007103B6 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E86D06B297AD710007103B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E86D075297AD710007103B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,37 +157,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E86D069297AD710007103B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E86D072297AD710007103B6 /* apple_sign_inTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E86D073297AD710007103B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E86D07C297AD710007103B6 /* apple_sign_inUITests.swift in Sources */,
-				3E86D07E297AD710007103B6 /* apple_sign_inUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3E86D06F297AD710007103B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3E86D056297AD70E007103B6 /* apple-sign-in */;
-			targetProxy = 3E86D06E297AD710007103B6 /* PBXContainerItemProxy */;
-		};
-		3E86D079297AD710007103B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3E86D056297AD70E007103B6 /* apple-sign-in */;
-			targetProxy = 3E86D078297AD710007103B6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3E86D060297AD70E007103B6 /* Main.storyboard */ = {
@@ -501,82 +351,6 @@
 			};
 			name = Release;
 		};
-		3E86D085297AD710007103B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QX5CR2FTN2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marcabrera.apple-sign-inTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/apple-sign-in.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/apple-sign-in";
-			};
-			name = Debug;
-		};
-		3E86D086297AD710007103B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QX5CR2FTN2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marcabrera.apple-sign-inTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/apple-sign-in.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/apple-sign-in";
-			};
-			name = Release;
-		};
-		3E86D088297AD710007103B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QX5CR2FTN2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marcabrera.apple-sign-inUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "apple-sign-in";
-			};
-			name = Debug;
-		};
-		3E86D089297AD710007103B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QX5CR2FTN2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.marcabrera.apple-sign-inUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "apple-sign-in";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,24 +368,6 @@
 			buildConfigurations = (
 				3E86D082297AD710007103B6 /* Debug */,
 				3E86D083297AD710007103B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3E86D084297AD710007103B6 /* Build configuration list for PBXNativeTarget "apple-sign-inTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E86D085297AD710007103B6 /* Debug */,
-				3E86D086297AD710007103B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3E86D087297AD710007103B6 /* Build configuration list for PBXNativeTarget "apple-sign-inUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E86D088297AD710007103B6 /* Debug */,
-				3E86D089297AD710007103B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
