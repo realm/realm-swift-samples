@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E278CC22A8DE9D7002A784A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		3E86D057297AD70E007103B6 /* apple-sign-in.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apple-sign-in.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E86D05A297AD70E007103B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E86D05C297AD70E007103B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		3E86D059297AD70E007103B6 /* apple-sign-in */ = {
 			isa = PBXGroup;
 			children = (
+				3E278CC22A8DE9D7002A784A /* README.md */,
 				3E86D08A297E8D69007103B6 /* apple-sign-in.entitlements */,
 				3E86D05A297AD70E007103B6 /* AppDelegate.swift */,
 				3E86D05C297AD70E007103B6 /* SceneDelegate.swift */,
