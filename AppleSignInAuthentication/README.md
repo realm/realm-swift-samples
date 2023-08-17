@@ -19,6 +19,7 @@ In this project you will be able to see an example of the following use case
 * Integrate RealmSwift framework for database management.
 * Implement [Apple Sign-In authentication](https://developer.apple.com/documentation/authenticationservices).
 * Store user information securely in Realm database.
+* Follow the code example from the [Apple Sign in Tutorial in MongoDB Developer's Hub](https://www.mongodb.com/developer/products/realm/authentication-ios-apps-apple-sign-in-atlas-app-services/)
 
 **Realm Details:**
 * RealmSwift v10.42.0
