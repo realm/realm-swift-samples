@@ -80,9 +80,9 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
             switch result {
             case .failure(let error):
                 print("Realm Login failed: \(error.localizedDescription)")
-            case .success(let realm):
+            case .success(let user):
                 DispatchQueue.main.async {
-                    print("Successful Login for realm \(realm)")
+                    print("Successful Login for realm \(user.id)")
                     self.performSegue(withIdentifier: "goToWelcomeViewController", sender: nil)
                 }
             }
