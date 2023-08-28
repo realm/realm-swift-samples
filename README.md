@@ -39,3 +39,8 @@ To learn more about using Realm with Atlas App Services, refer to the [Atlas Dev
     realm for the very first time, even if offline.
   * Logging out a Device Sync user and resetting your SwiftUI's associated Realm 
     when doing so.
+    
+* [`Apple SignIn and Authentication`](https://github.com/realm/realm-swift-samples/tree/main/AppleSignInAuthentications) - This simple sample project showcase the following example:
+  * Use Apple Sign In implementation in order to authenticate users in Realm/Device-Sync.
+    * Log screen view in UIKit.
+    * Authenticate users in Realm/Device-Sync using the RealmSwift SDK.
