@@ -2,6 +2,8 @@ included:
   - README.md
   - SyncConnectionStateErrorReset
   - AnalyticsTelemetricsData
+  - OfflineLoginRealmAccess
+  - AppleSignInAuthentication
 type_name:
   allowed_symbols:
     - _
