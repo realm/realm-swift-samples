@@ -30,9 +30,9 @@ struct StorePurchaseView: View {
         VStack {
             HStack {
                 Spacer()
-                Button(action: {
+                Button {
                     presentationMode.wrappedValue.dismiss()
-                }) {
+                } label: {
                     Image(systemName: "xmark.circle.fill")
                         .font(.system(size: 25))
                         .padding()
@@ -49,7 +49,7 @@ struct StorePurchaseView: View {
 
                 ForEach(storeKit.storeProducts) { product in
                     HStack {
-                        Button(action: {
+                        Button {
                             // Toggle the selectedProduct when the button is tapped
                             if selectedProduct == product {
                                 selectedProduct = nil
@@ -58,7 +58,7 @@ struct StorePurchaseView: View {
                             }
 
                             isAnyProductBundleSelected = selectedProduct != nil
-                        }) {
+                        } label: {
                             Image(systemName: selectedProduct == product ? "circle.inset.filled" : "circle")
                                 .foregroundColor(ColorPalette.violet)
                         }
@@ -78,7 +78,7 @@ struct StorePurchaseView: View {
 
             Spacer()
 
-            Button(action: {
+            Button {
                 if let selectedProduct = selectedProduct {
                     // Perform purchase for the selected product
                     Task {
@@ -99,7 +99,7 @@ struct StorePurchaseView: View {
                         }
                     }
                 }
-            }) {
+            } label: {
                 Text("Purchase Bundle")
                     .foregroundColor(Color.white)
                     .padding()

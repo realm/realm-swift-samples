@@ -32,11 +32,11 @@ struct LoginFormCard: View {
                 .overlay(RoundedRectangle(cornerRadius: 10.0).strokeBorder(.white, style: StrokeStyle(lineWidth: 1.0)))
                 .foregroundColor(.white)
 
-            Button(action: {
+            Button {
                 Task {
                     await handleAuth(.login)
                 }
-            }) {
+            } label: {
                 Text("Sign in")
                     .frame(maxWidth: .infinity)
                     .frame(height: 50)
@@ -52,11 +52,11 @@ struct LoginFormCard: View {
                             )
             }
 
-            Button(action: {
+            Button {
                 Task {
                     await handleAuth(.register)
                 }
-            }) {
+            } label: {
                 Text("Create Account")
                     .frame(maxWidth: .infinity)
                     .frame(height: 50)

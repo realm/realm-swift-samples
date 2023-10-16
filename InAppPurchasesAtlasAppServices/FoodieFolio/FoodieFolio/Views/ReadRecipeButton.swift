@@ -12,9 +12,9 @@ struct ReadRecipeButton: View {
     @State private var showSafariView = false
 
     var body: some View {
-        Button(action: {
+        Button {
             showSafariView.toggle()
-        }) {
+        } label: {
             Text("Read Recipe")
                 .font(.system(.body, weight: .bold))
                 .foregroundColor(.white)

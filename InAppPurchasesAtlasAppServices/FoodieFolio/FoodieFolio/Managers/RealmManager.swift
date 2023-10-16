@@ -17,7 +17,7 @@ class RealmManager: ObservableObject {
 
         // Configuration of subscription options
         let configuration = user.flexibleSyncConfiguration(initialSubscriptions: { subscription in
-            if let _ = subscription.first(named: "all-recipes"), let _ = subscription.first(named: "all-purchases") {
+            if subscription.first(named: "all-recipes") != nil && subscription.first(named: "all-purchases") != nil {
                 return
             } else {
                 if subscription.first(named: "all-recipes") == nil {

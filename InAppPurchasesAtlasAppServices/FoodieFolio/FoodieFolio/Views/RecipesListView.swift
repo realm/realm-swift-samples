@@ -44,9 +44,9 @@ struct RecipesListView: View {
                     }
                     .listStyle(.plain)
                     .navigationBarTitle("Recipes")
-                    .navigationBarItems(trailing: Button(action: {
+                    .navigationBarItems(trailing: Button {
                         isPresentingModal.toggle()
-                    }) {
+                    } label: {
                         Image(systemName: "gift.fill")
                             .foregroundColor(ColorPalette.lightLilac)
                     })
@@ -55,12 +55,12 @@ struct RecipesListView: View {
                     }
                 }
             }
-            .tabItem() {
+            .tabItem {
                 Label("Recipes", systemImage: "fork.knife")
             }
 
             AccountView()
-                .tabItem() {
+                .tabItem {
                     Label("Account", systemImage: "person.crop.circle.fill")
                 }
         }

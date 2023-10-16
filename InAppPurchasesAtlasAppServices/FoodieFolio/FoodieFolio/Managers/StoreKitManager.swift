@@ -94,7 +94,6 @@ class StoreKitManager: ObservableObject {
 
             return transaction
         case .userCancelled, .pending:
-            // TODO: handle this - Should send a message or something
             return nil
         default:
             return nil
