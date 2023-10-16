@@ -1,16 +1,31 @@
 # Integrating In-App Purchases with Atlas App Services using Flexible Sync
 
-This example contains a skeleton app to be used as a reference on how to implement Apple Sign in authentication with Realm using the [Realm Swift SDK](https://www.mongodb.com/docs/atlas/app-services/authentication/apple/#apple-id-authentication).
-In this project you will be able to see an example of the following use case
-* Use Apple Sign In implementation in order to authenticate users in your Realm database.
-    * Log screen view in UIKit.
-    * Authenticate users in Realm using the Swift SDK.
+This example contains a skeleton app to be used as a reference on how to In App Purchase with a seamless integration in App Services using the [Swift SDK](https://www.mongodb.com/docs/realm/sdk/swift/#realm-swift-sdk).
+In this project you will be able to see an example of the following use case:
+* Authenticate users using the Swift SDK.
+* Fetch data into your app using Flexible Sync.
+* Purchase non-consumable products.
+* Fetch all receipts from purchases and view them on Atlas.
 
 ## Relevant Files
 ```
-├── AppDelegate.swift
-├── LoginViewController.swift                      (Authentication Implementation)
-└──  other configuration files...    
+├── FoodieFolio
+│   ├── Managers                                (Managers for Atlas App)
+│   │   ├── RealmManager.swift                  (Manager for Realm functionality)
+│   │   ├── StoreKitManager.swift               (Manager for StoreKit Functionality)
+│   │   ├── AuthenticationManager.swift         (Manager for handling Realm Authentication)
+│   ├── Views                                   (Apps Views)
+│   │   ├── RecipesListView.swift               (Main App View)
+│   │   ├── RecipeDetail.swift                  (Recipe Detail View)
+│   │   ├── StorePurchaseView.swift             (Main IAP View to purchase premium recipes)
+│   │   ├── LoginView.swift                     (Authentication View - App Entry)
+│   │   └── other views/components
+├── App Services app                            (App Services Backend app)
+│   ├── realm_config.json                       (App Services configuration)
+│   ├── triggers                                (Triggers for data fetching)
+│   ├── functions                               (Linked functions to triggers)
+│   └── data_sources
+└──  other configuration/helper files...
 ```
 
 ## Scope
@@ -35,7 +50,7 @@ The app addresses the following points:
 
 ### Set up an Atlas App Services App
 
-To use Apple Sign In authentication in Realm, you must first:
+To use Email/Password Authentication in App Services, you must first:
 
 1. [Create an App Services App](https://www.mongodb.com/docs/atlas/app-services/manage-apps/create/create-with-ui/)
 2. Enable [Email/password](https://www.mongodb.com/docs/atlas/app-services/authentication/email-password/) authentication.
