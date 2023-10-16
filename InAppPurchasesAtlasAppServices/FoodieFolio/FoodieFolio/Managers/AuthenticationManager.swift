@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-let realmApp = RealmSwift.App(id: "foodie-folio-ojvso")
+let realmApp = RealmSwift.App(id: "YOUR_APP_ID")
 
 class AuthenticationManager: ObservableObject {
     static let shared = AuthenticationManager()
