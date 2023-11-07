@@ -33,7 +33,9 @@ struct LoginFormCard: View {
                 .headerStyle()
 
             TextField("Email", text: $email)
-                .textFieldStyle()
+                .padding(.all)
+                .overlay(RoundedRectangle(cornerRadius: 10.0).strokeBorder(.white, style: StrokeStyle(lineWidth: 1.0)))
+                .foregroundColor(.white)
                 .textInputAutocapitalization(.none)
 
             Text("Password")
