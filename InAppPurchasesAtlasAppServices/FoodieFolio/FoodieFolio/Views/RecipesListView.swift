@@ -99,8 +99,4 @@ struct RecipesListView: View {
             $0.userId == realmApp.currentUser?.id
         }
     }
-
-    var hasPurchases: Bool {
-        return !filteredPurchases.isEmpty
-    }
 }
