@@ -123,7 +123,6 @@ class StoreKitManager: ObservableObject {
         }
     }
 
-    @MainActor
     func updateCustomerProductStatus() async {
         var purchaseRecipes: [Product] = []
 
