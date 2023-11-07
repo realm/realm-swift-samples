@@ -28,16 +28,13 @@ class RealmManager: ObservableObject {
 
         // Configuration of subscription options
         let configuration = user.flexibleSyncConfiguration(initialSubscriptions: { subscription in
-            if subscription.first(named: "all-recipes") != nil && subscription.first(named: "all-purchases") != nil {
-                return
-            } else {
-                if subscription.first(named: "all-recipes") == nil {
-                    subscription.append(QuerySubscription<Recipe>(name: "all-recipes"))
-                }
-                if subscription.first(named: "all-purchases") == nil {
-                    subscription.append(QuerySubscription<Purchase>(name: "all-purchases"))
-                }
-            }
+ if subscription.first(named: "all-recipes") == nil {
+                subscription.append(QuerySubscription<Recipe>(name: "all-recipes"))
+ }
+
+if subscription.first(named: "all-purchases") == nil {
+                subscription.append(QuerySubscription<Purchase>(name: "all-purchases"))
+}
         }, rerunOnOpen: true)
 
         do {
