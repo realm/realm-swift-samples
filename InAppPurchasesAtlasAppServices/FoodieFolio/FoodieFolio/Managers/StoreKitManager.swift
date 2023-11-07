@@ -116,7 +116,7 @@ class StoreKitManager: ObservableObject {
     func updateCustomerProductStatus() async {
         var purchaseRecipes: [Product] = []
 
-        // iterate through all the user's purcahsed products
+        // iterate through all the user's purchased products
         for await result in Transaction.currentEntitlements {
             do {
                 // check if transaction is verified
