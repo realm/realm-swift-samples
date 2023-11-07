@@ -56,11 +56,11 @@ struct LoginFormCard: View {
                     .cornerRadius(10)
             }
             .alert(isPresented: $isAlertPresented) {
-                            Alert(
-                                title: Text("Login Error"),
-                                message: Text(alertMessage),
-                                dismissButton: .default(Text("OK"))
-                            )
+                Alert(
+                    title: Text("Login Error"),
+                    message: Text(alertMessage),
+                    dismissButton: .default(Text("OK"))
+                )
             }
 
             Button {
@@ -76,11 +76,11 @@ struct LoginFormCard: View {
                     .cornerRadius(10)
             }
             .alert(isPresented: $isAlertPresented) {
-                            Alert(
-                                title: Text("Login Error"),
-                                message: Text(alertMessage),
-                                dismissButton: .default(Text("OK"))
-                            )
+                Alert(
+                    title: Text("Login Error"),
+                    message: Text(alertMessage),
+                    dismissButton: .default(Text("OK"))
+                )
             }
         }
         .padding(.horizontal, 20)
