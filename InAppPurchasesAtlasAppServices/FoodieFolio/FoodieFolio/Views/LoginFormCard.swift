@@ -58,13 +58,6 @@ struct LoginFormCard: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            .alert(isPresented: $isAlertPresented) {
-                Alert(
-                    title: Text("Login Error"),
-                    message: Text(alertMessage),
-                    dismissButton: .default(Text("OK"))
-                )
-            }
 
             Button {
                 Task {
