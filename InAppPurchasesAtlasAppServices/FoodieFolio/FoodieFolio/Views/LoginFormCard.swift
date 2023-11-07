@@ -34,6 +34,7 @@ struct LoginFormCard: View {
 
             TextField("Email", text: $email)
                 .textFieldStyle()
+                .textInputAutocapitalization(.none)
 
             Text("Password")
                 .headerStyle()
