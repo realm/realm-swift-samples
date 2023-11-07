@@ -52,12 +52,4 @@ struct ContentView: View {
             EmptyView()
         }
     }
-}
-
-/*
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-*/
+}g
