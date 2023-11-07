@@ -24,7 +24,7 @@ struct CapsuleButton: View {
 
     var body: some View {
         Button(action: action) {
-            Text(title.capitalizedWord)
+            Text(title.capitalized)
                 .font(.system(size: 14, weight: .bold))
                 .padding(.horizontal, 10)
                 .padding(.vertical, 4)
