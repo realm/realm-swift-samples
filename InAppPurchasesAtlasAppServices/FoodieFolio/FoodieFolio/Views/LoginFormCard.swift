@@ -91,9 +91,9 @@ struct LoginFormCard: View {
 
             switch action {
             case .login:
-                result = await AuthenticationManager.shared.loginUser(email: email, password: password)
+                result = await AuthenticationManager().loginUser(email: email, password: password)
             case .register:
-                result = await AuthenticationManager.shared.registerUser(email: email, password: password)
+                result = await AuthenticationManager().registerUser(email: email, password: password)
             }
 
             switch result {

@@ -11,7 +11,6 @@ import RealmSwift
 let realmApp = RealmSwift.App(id: "YOUR_APP_ID")
 
 class AuthenticationManager: ObservableObject {
-    static let shared = AuthenticationManager()
 
     // MARK: - User Authentication
     func loginUser(email: String, password: String) async -> Result<User, Error> {

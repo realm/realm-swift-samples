@@ -17,7 +17,7 @@ struct AccountView: View {
                     .onTapGesture {
                         Task {
                             if let user = realmApp.currentUser {
-                                let result = await AuthenticationManager.shared.logoutUser(user)
+                                let result = await AuthenticationManager().logoutUser(user)
 
                                 switch result {
                                 case .success:
