@@ -20,8 +20,8 @@ import SwiftUI
 import RealmSwift
 
 struct RecipesListView: View {
-    @ObservedResults(Recipe.self) var recipes: Results<Recipe>
-    @ObservedResults(Purchase.self) var purchases: Results<Purchase>
+    @ObservedResults(Recipe.self) var recipes
+    @ObservedResults(Purchase.self) var purchases
     @State private var isPresentingModal = false
     @State private var selectedCategory: String = "general"
 
