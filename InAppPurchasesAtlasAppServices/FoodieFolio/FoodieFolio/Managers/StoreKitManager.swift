@@ -20,7 +20,7 @@ import Foundation
 import StoreKit
 
 /// `StoreKitManager` is responsible for managing in-app purchases and product information.
-///  NOTE:
+
 class StoreKitManager: ObservableObject {
     /// An array of published products available for purchase.
     @Published var storeProducts: [Product] = []
