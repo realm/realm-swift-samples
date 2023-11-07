@@ -20,10 +20,7 @@ import SwiftUI
 import RealmSwift
 
 struct LoginView: View {
-    @State private var email: String = ""
-    @State private var password: String = ""
     @State private var isAlertPresented = false
-    @State private var alertMessage = ""
     @State var isLoginSuccessful = false
 
     var body: some View {
