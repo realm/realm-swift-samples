@@ -38,7 +38,7 @@ class RealmManager: ObservableObject {
         })
 
         do {
-            _ = try await Realm(configuration: configuration, downloadBeforeOpen: .once)
+            self.realm = try await Realm(configuration: configuration, downloadBeforeOpen: .once)
         } catch {
             print("There was an error opening the realm: \(error.localizedDescription)")
         }
