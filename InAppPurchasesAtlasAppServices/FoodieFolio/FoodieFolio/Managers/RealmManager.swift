@@ -28,14 +28,14 @@ class RealmManager: ObservableObject {
 
         // Configuration of subscription options
         let configuration = user.flexibleSyncConfiguration(initialSubscriptions: { subscription in
- if subscription.first(named: "all-recipes") == nil {
+            if subscription.first(named: "all-recipes") == nil {
                 subscription.append(QuerySubscription<Recipe>(name: "all-recipes"))
- }
+            }
 
-if subscription.first(named: "all-purchases") == nil {
+            if subscription.first(named: "all-purchases") == nil {
                 subscription.append(QuerySubscription<Purchase>(name: "all-purchases"))
-}
-        }, rerunOnOpen: true)
+            }
+        })
 
         do {
             _ = try await Realm(configuration: configuration, downloadBeforeOpen: .once)
