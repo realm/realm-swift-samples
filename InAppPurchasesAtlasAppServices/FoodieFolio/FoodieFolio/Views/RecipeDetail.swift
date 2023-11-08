@@ -35,7 +35,7 @@ struct RecipeDetail: View {
                 let calories = recipe.calories?.roundedUpToString() ?? "0 cal"
                 CuisineView(cuisineType: cuisineType.capitalizedWord, calories: calories)
 
-                IngredientsView(ingredients: Array(recipe.ingredientLines))
+                IngredientsView(ingredients: recipe.ingredientLines)
                     .padding(.bottom, 20)
 
                 ReadRecipeButton(recipeURL: URL(string: recipe.url ?? ""))

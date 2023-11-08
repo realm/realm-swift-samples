@@ -17,20 +17,21 @@
 ////////////////////////////////////////////////////////////////////////////
 
 import SwiftUI
+import RealmSwift
 
 struct IngredientsView: View {
-    var ingredients: [String]
+    var ingredients: RealmSwift.List<String>
 
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             Text("INGREDIENTS")
                 .font(.system(.title2))
-            ForEach(ingredients, id: \.self) { ingredient in
+            ForEach(0..<ingredients.count, id: \.self) { index in
                 HStack {
                     Image(systemName: "circle.fill")
                         .font(.system(size: 7, weight: .light))
                         .foregroundColor(ColorPalette.darkLilacAccent)
-                    Text(ingredient)
+                    Text(ingredients[index])
                 }
             }
         }
@@ -40,11 +41,5 @@ struct IngredientsView: View {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(ColorPalette.darkLilacAccent, lineWidth: 1)
         )
-    }
-}
-
-struct IngredientsView_Previews: PreviewProvider {
-    static var previews: some View {
-        IngredientsView(ingredients: ["2 teaspoons olive oil", "water"])
     }
 }
