@@ -118,11 +118,11 @@ struct StorePurchaseView: View {
                     .cornerRadius(10)
             }
             .alert(isPresented: $isAlertPresented) {
-                            Alert(
-                                title: Text("Error"),
-                                message: Text(alertMessage),
-                                dismissButton: .default(Text("OK"))
-                            )
+                Alert(
+                    title: Text("Error"),
+                    message: Text(alertMessage),
+                    dismissButton: .default(Text("OK"))
+                )
             }
             .padding(.bottom)
             .disabled(!isAnyProductBundleSelected) // Disable the button if no circle button is selected
