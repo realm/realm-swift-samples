@@ -61,9 +61,9 @@ struct RecipesListView: View {
                         Image(systemName: "gift.fill")
                             .foregroundColor(ColorPalette.lightLilac)
                     })
-                    .sheet(isPresented: $isPresentingModal) {
-                        StorePurchaseView()
-                    }
+                }
+                .sheet(isPresented: $isPresentingModal) {
+                    StorePurchaseView()
                 }
             }
             .tabItem {
