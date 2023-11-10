@@ -31,7 +31,7 @@ struct RecipeDetail: View {
                     .font(.title)
                     .padding(.bottom, 10)
 
-                let cuisineType = recipe.cuisineType.first ?? "Unspecified"
+                let cuisineType = recipe.cuisineType ?? "Unspecified"
                 let calories = recipe.calories?.roundedUpToString() ?? "0 cal"
                 CuisineView(cuisineType: cuisineType.capitalizedWord, calories: calories)
 

@@ -26,7 +26,7 @@ class Recipe: Object, Identifiable {
 
     @Persisted var cautions: List<String>
 
-    @Persisted var cuisineType: List<String>
+    @Persisted var cuisineType: String?
 
     @Persisted var dietLabels: List<String>
 
