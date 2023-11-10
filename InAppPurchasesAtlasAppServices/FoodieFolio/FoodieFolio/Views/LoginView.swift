@@ -32,7 +32,6 @@ struct LoginView: View {
 
                 VStack {
                     ZStack {
-                        // Background View
                         ColorPalette.violet
                             .opacity(0.8)
                             .cornerRadius(20)
