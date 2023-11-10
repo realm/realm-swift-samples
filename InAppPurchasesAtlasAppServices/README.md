@@ -64,5 +64,9 @@ To use Email/Password Authentication in App Services, you must first:
 
 1. Copy your [Atlas App ID](https://www.mongodb.com/docs/atlas/app-services/reference/find-your-project-or-app-id/#std-label-find-your-app-id) from the App Services UI.
 2. Paste the copied ID as the value of the existing variable `appRealm` to `FoodieFolio/Managers/AuthenticationManager.swift`.
-3. You can use the `App Services app` directory as an example for fetching the content of the recipes into your Atlas database.
-3. Run the example. 
+3. You can use the `App Services app` directory as an example for fetching the content of the recipes into your Atlas database. As an alternative, you can use this app and import it to your own App Services app doing the following:
+3.1. Create an App Services app following the steps provided in the above section.
+3.2. Rename the main directory from `App Services app` to the name of the app that you have created in App Services.
+3.3. Modify the parameters `clusterName`, `app_id` and `name` from the config files within the directory so it matches your own. 
+3.4. Import the app using the command `app services push --remote="your_app_id"` from the [App Services CLI](https://www.mongodb.com/docs/atlas/app-services/cli/#installation)
+4. Run the example.
