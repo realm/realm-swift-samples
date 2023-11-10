@@ -51,9 +51,6 @@ struct LoginView: View {
                     LoginFormCard(isLoginSuccessful: $isLoginSuccessful)
                 }
             }
-            .navigationDestination(isPresented: $isLoginSuccessful) {
-                RecipesListView()
-            }
         }
     }
 }
