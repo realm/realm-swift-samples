@@ -3,15 +3,15 @@ exports = async function(arg){
   
   var serviceName = "mongodb-atlas";
   var dbName = "foodie-folio";
-  var collName = "Recipes";
+  var collName = "Recipe";
   
-  var edamamAppID = context.values.get('YOUR_EDAMAM_APP_ID');
-  var edamamAPIKey = context.values.get('YOUR_EDAMAM_API KEY');
+  var edamamAppID = context.values.get('edamam-app-id-link-to-secret');
+  var edamamAPIKey = context.values.get('edamam-api-key-link-to-secret');
   
   // Change this and add it as url query parameters instead
   const diet = "low-carb";
-  const premiumRecipes = "Japanese"
-  var queryString = `?type=any&app_id=${edamamAppID}&app_key=${edamamAPIKey}&cuisineType=${premiumRecipe}&diet=${diet}`;
+  const premiumRecipes = ["Japanese", "Greek"]
+  var queryString = `?type=any&app_id=${edamamAppID}&app_key=${edamamAPIKey}&cuisineType=${premiumRecipes[0]}&cuisineType=${premiumRecipes[1]}&diet=${diet}`;
   var baseURL = "https://api.edamam.com/api/recipes/v2";
   
   const endpoint = baseURL + queryString;
@@ -32,11 +32,12 @@ exports = async function(arg){
       // Use the recipe URI as the unique identifier
       const filter = { uri: recipeURI };
 
+      // SELECTION OF DATA I WANT TO insert
       const dataToUpsert = {
         uri: recipeObject.uri,
         calories: recipeObject.calories,
         cautions: recipeObject.cautions,
-        cuisineType: recipeObject.cuisineType,
+        cuisineType: recipeObject.cuisineType[0],
         dietLabels: recipeObject.dietLabels,
         dishType: recipeObject.dishType,
         healthLabels: recipeObject.healthLabels,

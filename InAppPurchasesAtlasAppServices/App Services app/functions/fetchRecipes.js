@@ -3,7 +3,7 @@ exports = async function(arg){
   
   var serviceName = "mongodb-atlas";
   var dbName = "foodie-folio";
-  var collName = "Recipes";
+  var collName = "Recipe";
   
   var edamamAppID = context.values.get('edamam-app-id-link-to-secret');
   var edamamAPIKey = context.values.get('edamam-api-key-link-to-secret');
@@ -30,13 +30,13 @@ exports = async function(arg){
       
       // Use the recipe URI as the unique identifier
       const filter = { uri: recipeURI };
-      
+
       // SELECTION OF DATA I WANT TO insert
       const dataToUpsert = {
         uri: recipeObject.uri,
         calories: recipeObject.calories,
         cautions: recipeObject.cautions,
-        cuisineType: recipeObject.cuisineType,
+        cuisineType: recipeObject.cuisineType[0],
         dietLabels: recipeObject.dietLabels,
         dishType: recipeObject.dishType,
         healthLabels: recipeObject.healthLabels,
