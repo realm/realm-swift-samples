@@ -21,11 +21,11 @@ import RealmSwift
 
 class Purchase: Object, Identifiable {
     @Persisted(primaryKey: true) var _id: ObjectId?
-    @Persisted var receipt: Purchase_receipt?
+    @Persisted var receipt: PurchaseReceipt?
     @Persisted var userId: String?
 }
 
-class Purchase_receipt: EmbeddedObject {
+class PurchaseReceipt: EmbeddedObject {
     @Persisted var bundleId: String?
 
     @Persisted var deviceVerification: String?
