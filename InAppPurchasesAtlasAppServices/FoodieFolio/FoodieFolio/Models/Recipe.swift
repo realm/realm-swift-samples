@@ -38,7 +38,7 @@ class Recipe: Object, Identifiable {
 
     @Persisted var ingredientLines: List<String>
 
-    @Persisted var ingredients: List<Recipe_ingredients>
+    @Persisted var ingredients: List<RecipeIngredients>
 
     @Persisted var label: String?
 
@@ -61,7 +61,7 @@ class Recipe: Object, Identifiable {
     @Persisted var yield: Double?
 }
 
-class Recipe_ingredients: EmbeddedObject {
+class RecipeIngredients: EmbeddedObject {
     @Persisted var food: String?
 
     @Persisted var foodCategory: String?
