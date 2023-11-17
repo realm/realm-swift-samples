@@ -10,12 +10,12 @@ exports = async function(arg){
   
   // Change this and add it as url query parameters instead
   const diet = "low-carb";
-  const premiumRecipes = ["Japanese", "Greek"]
-  var queryString = `?type=any&app_id=${edamamAppID}&app_key=${edamamAPIKey}&cuisineType=${premiumRecipes[0]}&cuisineType=${premiumRecipes[1]}&diet=${diet}`;
+  const premiumRecipes = "Japanese"
+  var queryString = `?type=any&app_id=${edamamAppID}&app_key=${edamamAPIKey}&cuisineType=${premiumRecipes}&diet=${diet}`;
   var baseURL = "https://api.edamam.com/api/recipes/v2";
   
   const endpoint = baseURL + queryString;
-  
+
   console.log(endpoint);
 
   // Get a collection from the context
@@ -31,9 +31,10 @@ exports = async function(arg){
       
       // Use the recipe URI as the unique identifier
       const filter = { uri: recipeURI };
-
+      
       // SELECTION OF DATA I WANT TO insert
       const dataToUpsert = {
+        category: "purchased",
         uri: recipeObject.uri,
         calories: recipeObject.calories,
         cautions: recipeObject.cautions,

@@ -30,9 +30,10 @@ exports = async function(arg){
       
       // Use the recipe URI as the unique identifier
       const filter = { uri: recipeURI };
-
+      
       // SELECTION OF DATA I WANT TO insert
       const dataToUpsert = {
+        category: "free",
         uri: recipeObject.uri,
         calories: recipeObject.calories,
         cautions: recipeObject.cautions,
