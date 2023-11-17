@@ -22,6 +22,8 @@ import RealmSwift
 class Recipe: Object, Identifiable {
     @Persisted(primaryKey: true) var _id: ObjectId?
 
+    @Persisted var category: String?
+
     @Persisted var calories: Double?
 
     @Persisted var cautions: List<String>

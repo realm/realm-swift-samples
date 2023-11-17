@@ -23,7 +23,7 @@ struct RecipesListView: View {
     @ObservedResults(Recipe.self) var recipes
     @ObservedResults(Purchase.self) var purchases
     @State private var isPresentingModal = false
-    @State private var selectedCategory: String = "general"
+    @State private var selectedCategory: RecipeCategory = .general
 
     var body: some View {
         TabView {
@@ -34,11 +34,11 @@ struct RecipesListView: View {
                             .font(.system(size: 20, weight: .semibold))
                         HStack {
                             CapsuleButton(title: "General") {
-                                selectedCategory = "general"
+                                selectedCategory = .general
                             }
                             if showPremiumButton {
                                 CapsuleButton(title: "Premium") {
-                                    selectedCategory = "premium"
+                                    selectedCategory = .premium
                                 }
                             }
                         }
@@ -83,13 +83,13 @@ struct RecipesListView: View {
     }
 
     var filteredRecipes: Results<Recipe> {
-        if selectedCategory == "premium" {
+        if selectedCategory == .premium {
             return recipes.where {
-                ($0.cuisineType == "japanese")
+                ($0.category == "free")
             }
         } else {
             return recipes.where {
-                $0.cuisineType == "american"
+                $0.category == "purchased"
             }
         }
     }
@@ -99,4 +99,9 @@ struct RecipesListView: View {
             $0.userId == realmApp.currentUser?.id
         }
     }
+}
+
+enum RecipeCategory: String {
+    case general
+    case premium
 }
