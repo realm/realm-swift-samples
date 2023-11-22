@@ -1,6 +1,9 @@
 # Integrating In-App Purchases with Atlas App Services using Flexible Sync
 
 This example contains a skeleton app to be used as a reference on how to In App Purchase with a seamless integration in App Services using the [Swift SDK](https://www.mongodb.com/docs/realm/sdk/swift/#realm-swift-sdk).
+
+The scope of this app aims to demonstrate the effortless integration between Realm Device Sync, offering efficient data management and synchronization, and StoreKit for handling in-app purchases. The goal is to achieve a robust implementation that enables users to buy recipes stored in a Realm Database. After confirming the purchase through StoreKit, users can unlock premium content recipes and conveniently store purchase receipts on a separate collection for easy access on the developer's side in Atlas.
+
 In this project you will be able to see an example of the following use case:
 * Authenticate users using the Swift SDK.
 * Fetch data into your app using Flexible Sync.
