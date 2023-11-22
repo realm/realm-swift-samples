@@ -4,6 +4,7 @@ included:
   - AnalyticsTelemetricsData
   - OfflineLoginRealmAccess
   - AppleSignInAuthentication
+  - InAppPurchasesAtlasAppServices
 type_name:
   allowed_symbols:
     - _

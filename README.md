@@ -44,3 +44,15 @@ To learn more about using Realm with Atlas App Services, refer to the [Atlas Dev
   * Use Apple Sign In implementation in order to authenticate users in Realm/Device-Sync.
     * Log screen view in UIKit.
     * Authenticate users in Realm/Device-Sync using the RealmSwift SDK.
+    
+* [`Integrating In-App Purchases with Atlas App Services using Flexible Sync`](https://github.com/realm/realm-swift-samples/tree/main/InAppPurchasesAtlasAppServices) 
+    * The scope of this app aims to demonstrate the effortless integration between Realm Device Sync, 
+      offering efficient data management and synchronization, and StoreKit for handling in-app purchases. 
+      The goal is to achieve a robust implementation that enables users to buy recipes stored in a Realm Database. 
+      After confirming the purchase through StoreKit, users can unlock premium content recipes and conveniently 
+      store purchase receipts on a separate collection for easy access on the developer's side in Atlas.
+    * In this project you will be able to see an example of the following use case:
+        * Authenticate users using the Swift SDK.
+        * Fetch data into your app using Flexible Sync.
+        * Purchase non-consumable products.
+        * Fetch all receipts from purchases and view them on Atlas.
