@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E0467ED2A9CB73A004CC947 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0467EC2A9CB73A004CC947 /* IngredientsView.swift */; };
+		3E0467EF2A9CB9F1004CC947 /* ReadRecipeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0467EE2A9CB9F1004CC947 /* ReadRecipeButton.swift */; };
+		3E0467F12A9CBA3D004CC947 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0467F02A9CBA3D004CC947 /* SafariView.swift */; };
+		3E0467F52A9CC650004CC947 /* CuisineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0467F42A9CC650004CC947 /* CuisineView.swift */; };
+		3E0467F72A9CE2CB004CC947 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0467F62A9CE2CB004CC947 /* ColorPalette.swift */; };
+		3E0467FA2A9F76ED004CC947 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0467F92A9F76ED004CC947 /* StoreKit.framework */; };
+		3E0467FC2A9F9065004CC947 /* StorePurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0467FB2A9F9065004CC947 /* StorePurchaseView.swift */; };
+		3E1845F22AA09B6A00EF5AD3 /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E1845F12AA09B6A00EF5AD3 /* PropertyList.plist */; };
+		3E1845F42AA09C1900EF5AD3 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1845F32AA09C1900EF5AD3 /* StoreKitManager.swift */; };
+		3E278CC12A8A193F002A784A /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E278CC02A8A193F002A784A /* Double+Extension.swift */; };
+		3E2CC8BF2AC3221B0013AF50 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2CC8BE2AC3221B0013AF50 /* AuthenticationManager.swift */; };
+		3E2CC8C12ACB17960013AF50 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2CC8C02ACB17960013AF50 /* AccountView.swift */; };
+		3E2E24E12ACEF4F60042E588 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E24E02ACEF4F60042E588 /* CapsuleButton.swift */; };
+		3E2E24E52AD00E730042E588 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E24E42AD00E730042E588 /* Purchase.swift */; };
+		3E3A14F92A8286C50086F5B8 /* FoodieFolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A14F82A8286C50086F5B8 /* FoodieFolioApp.swift */; };
+		3E3A14FB2A8286C50086F5B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A14FA2A8286C50086F5B8 /* ContentView.swift */; };
+		3E3A14FD2A8286C60086F5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A14FC2A8286C60086F5B8 /* Assets.xcassets */; };
+		3E3A15002A8286C60086F5B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3A14FF2A8286C60086F5B8 /* Preview Assets.xcassets */; };
+		3E3A15082A83AC220086F5B8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3E3A15072A83AC220086F5B8 /* Realm */; };
+		3E3A150A2A83AC220086F5B8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3E3A15092A83AC220086F5B8 /* RealmSwift */; };
+		3E3A150D2A83ACA30086F5B8 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A150C2A83ACA30086F5B8 /* RealmManager.swift */; };
+		3E3A15102A83AEA10086F5B8 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A150F2A83AEA10086F5B8 /* Recipe.swift */; };
+		3E3A15132A83D7870086F5B8 /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A15122A83D7870086F5B8 /* RecipesListView.swift */; };
+		3E3A15152A84EB110086F5B8 /* RecipeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A15142A84EB110086F5B8 /* RecipeRow.swift */; };
+		3E3A15172A84EEA00086F5B8 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A15162A84EEA00086F5B8 /* RecipeDetail.swift */; };
+		3E3A15192A852FBD0086F5B8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A15182A852FBD0086F5B8 /* CircleImage.swift */; };
+		3E9BDF062AAF616D00A73090 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9BDF052AAF616D00A73090 /* LoginView.swift */; };
+		3EA304C52AB35782003A6A1C /* LoginFormCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA304C42AB35782003A6A1C /* LoginFormCard.swift */; };
+		3EA304CB2AB36132003A6A1C /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA304CA2AB36132003A6A1C /* Text+Extension.swift */; };
+		3EB573232A862A28005B8AF6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB573222A862A28005B8AF6 /* String+Extension.swift */; };
+		3EB573252A862F57005B8AF6 /* RecipeDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB573242A862F57005B8AF6 /* RecipeDetailInfoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E0467EC2A9CB73A004CC947 /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
+		3E0467EE2A9CB9F1004CC947 /* ReadRecipeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadRecipeButton.swift; sourceTree = "<group>"; };
+		3E0467F02A9CBA3D004CC947 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		3E0467F42A9CC650004CC947 /* CuisineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineView.swift; sourceTree = "<group>"; };
+		3E0467F62A9CE2CB004CC947 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		3E0467F92A9F76ED004CC947 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3E0467FB2A9F9065004CC947 /* StorePurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePurchaseView.swift; sourceTree = "<group>"; };
+		3E1845F02AA0989800EF5AD3 /* Product.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = Product.storekit; path = Views/Product.storekit; sourceTree = "<group>"; };
+		3E1845F12AA09B6A00EF5AD3 /* PropertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
+		3E1845F32AA09C1900EF5AD3 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		3E278CC02A8A193F002A784A /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		3E2CC8BE2AC3221B0013AF50 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		3E2CC8C02ACB17960013AF50 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		3E2E24E02ACEF4F60042E588 /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
+		3E2E24E42AD00E730042E588 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		3E3A14F52A8286C50086F5B8 /* FoodieFolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodieFolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3A14F82A8286C50086F5B8 /* FoodieFolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieFolioApp.swift; sourceTree = "<group>"; };
+		3E3A14FA2A8286C50086F5B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3E3A14FC2A8286C60086F5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E3A14FF2A8286C60086F5B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E3A150C2A83ACA30086F5B8 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		3E3A150F2A83AEA10086F5B8 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		3E3A15122A83D7870086F5B8 /* RecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListView.swift; sourceTree = "<group>"; };
+		3E3A15142A84EB110086F5B8 /* RecipeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRow.swift; sourceTree = "<group>"; };
+		3E3A15162A84EEA00086F5B8 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
+		3E3A15182A852FBD0086F5B8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		3E9BDF052AAF616D00A73090 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3EA304C42AB35782003A6A1C /* LoginFormCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormCard.swift; sourceTree = "<group>"; };
+		3EA304CA2AB36132003A6A1C /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		3EB573222A862A28005B8AF6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		3EB573242A862F57005B8AF6 /* RecipeDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailInfoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E3A14F22A8286C50086F5B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0467FA2A9F76ED004CC947 /* StoreKit.framework in Frameworks */,
+				3E3A150A2A83AC220086F5B8 /* RealmSwift in Frameworks */,
+				3E3A15082A83AC220086F5B8 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E0467F82A9F76ED004CC947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E0467F92A9F76ED004CC947 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E3A14EC2A8286C50086F5B8 = {
+			isa = PBXGroup;
+			children = (
+				3E3A14F72A8286C50086F5B8 /* FoodieFolio */,
+				3E3A14F62A8286C50086F5B8 /* Products */,
+				3E0467F82A9F76ED004CC947 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E3A14F62A8286C50086F5B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A14F52A8286C50086F5B8 /* FoodieFolio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E3A14F72A8286C50086F5B8 /* FoodieFolio */ = {
+			isa = PBXGroup;
+			children = (
+				3E1845F02AA0989800EF5AD3 /* Product.storekit */,
+				3E1845F12AA09B6A00EF5AD3 /* PropertyList.plist */,
+				3EB573212A862A17005B8AF6 /* Extensions */,
+				3E3A15112A83D75D0086F5B8 /* Views */,
+				3E3A150E2A83AE790086F5B8 /* Models */,
+				3E3A150B2A83AC870086F5B8 /* Managers */,
+				3E3A14F82A8286C50086F5B8 /* FoodieFolioApp.swift */,
+				3E3A14FA2A8286C50086F5B8 /* ContentView.swift */,
+				3E3A14FC2A8286C60086F5B8 /* Assets.xcassets */,
+				3E0467F62A9CE2CB004CC947 /* ColorPalette.swift */,
+				3E3A14FE2A8286C60086F5B8 /* Preview Content */,
+			);
+			path = FoodieFolio;
+			sourceTree = "<group>";
+		};
+		3E3A14FE2A8286C60086F5B8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A14FF2A8286C60086F5B8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3E3A150B2A83AC870086F5B8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A150C2A83ACA30086F5B8 /* RealmManager.swift */,
+				3E1845F32AA09C1900EF5AD3 /* StoreKitManager.swift */,
+				3E2CC8BE2AC3221B0013AF50 /* AuthenticationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3E3A150E2A83AE790086F5B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A150F2A83AEA10086F5B8 /* Recipe.swift */,
+				3E2E24E42AD00E730042E588 /* Purchase.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E3A15112A83D75D0086F5B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A15122A83D7870086F5B8 /* RecipesListView.swift */,
+				3E3A15142A84EB110086F5B8 /* RecipeRow.swift */,
+				3E3A15162A84EEA00086F5B8 /* RecipeDetail.swift */,
+				3E3A15182A852FBD0086F5B8 /* CircleImage.swift */,
+				3EB573242A862F57005B8AF6 /* RecipeDetailInfoView.swift */,
+				3E0467EC2A9CB73A004CC947 /* IngredientsView.swift */,
+				3E0467EE2A9CB9F1004CC947 /* ReadRecipeButton.swift */,
+				3E0467F02A9CBA3D004CC947 /* SafariView.swift */,
+				3E0467F42A9CC650004CC947 /* CuisineView.swift */,
+				3E0467FB2A9F9065004CC947 /* StorePurchaseView.swift */,
+				3E9BDF052AAF616D00A73090 /* LoginView.swift */,
+				3EA304C42AB35782003A6A1C /* LoginFormCard.swift */,
+				3E2CC8C02ACB17960013AF50 /* AccountView.swift */,
+				3E2E24E02ACEF4F60042E588 /* CapsuleButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3EB573212A862A17005B8AF6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3EB573222A862A28005B8AF6 /* String+Extension.swift */,
+				3E278CC02A8A193F002A784A /* Double+Extension.swift */,
+				3EA304CA2AB36132003A6A1C /* Text+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E3A14F42A8286C50086F5B8 /* FoodieFolio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E3A15032A8286C60086F5B8 /* Build configuration list for PBXNativeTarget "FoodieFolio" */;
+			buildPhases = (
+				3E3A14F12A8286C50086F5B8 /* Sources */,
+				3E3A14F22A8286C50086F5B8 /* Frameworks */,
+				3E3A14F32A8286C50086F5B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodieFolio;
+			packageProductDependencies = (
+				3E3A15072A83AC220086F5B8 /* Realm */,
+				3E3A15092A83AC220086F5B8 /* RealmSwift */,
+			);
+			productName = FoodieFolio;
+			productReference = 3E3A14F52A8286C50086F5B8 /* FoodieFolio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E3A14ED2A8286C50086F5B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3E3A14F42A8286C50086F5B8 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3E3A14F02A8286C50086F5B8 /* Build configuration list for PBXProject "FoodieFolio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E3A14EC2A8286C50086F5B8;
+			packageReferences = (
+				3E3A15062A83AC220086F5B8 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 3E3A14F62A8286C50086F5B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E3A14F42A8286C50086F5B8 /* FoodieFolio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E3A14F32A8286C50086F5B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1845F22AA09B6A00EF5AD3 /* PropertyList.plist in Resources */,
+				3E3A15002A8286C60086F5B8 /* Preview Assets.xcassets in Resources */,
+				3E3A14FD2A8286C60086F5B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E3A14F12A8286C50086F5B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3A14FB2A8286C50086F5B8 /* ContentView.swift in Sources */,
+				3EA304C52AB35782003A6A1C /* LoginFormCard.swift in Sources */,
+				3EB573232A862A28005B8AF6 /* String+Extension.swift in Sources */,
+				3E0467F52A9CC650004CC947 /* CuisineView.swift in Sources */,
+				3E3A15192A852FBD0086F5B8 /* CircleImage.swift in Sources */,
+				3E3A15172A84EEA00086F5B8 /* RecipeDetail.swift in Sources */,
+				3E3A14F92A8286C50086F5B8 /* FoodieFolioApp.swift in Sources */,
+				3E2E24E12ACEF4F60042E588 /* CapsuleButton.swift in Sources */,
+				3E278CC12A8A193F002A784A /* Double+Extension.swift in Sources */,
+				3EA304CB2AB36132003A6A1C /* Text+Extension.swift in Sources */,
+				3E2CC8BF2AC3221B0013AF50 /* AuthenticationManager.swift in Sources */,
+				3E2E24E52AD00E730042E588 /* Purchase.swift in Sources */,
+				3E0467F12A9CBA3D004CC947 /* SafariView.swift in Sources */,
+				3EB573252A862F57005B8AF6 /* RecipeDetailInfoView.swift in Sources */,
+				3E0467ED2A9CB73A004CC947 /* IngredientsView.swift in Sources */,
+				3E3A15152A84EB110086F5B8 /* RecipeRow.swift in Sources */,
+				3E0467F72A9CE2CB004CC947 /* ColorPalette.swift in Sources */,
+				3E1845F42AA09C1900EF5AD3 /* StoreKitManager.swift in Sources */,
+				3E3A15132A83D7870086F5B8 /* RecipesListView.swift in Sources */,
+				3E3A150D2A83ACA30086F5B8 /* RealmManager.swift in Sources */,
+				3E3A15102A83AEA10086F5B8 /* Recipe.swift in Sources */,
+				3E2CC8C12ACB17960013AF50 /* AccountView.swift in Sources */,
+				3E9BDF062AAF616D00A73090 /* LoginView.swift in Sources */,
+				3E0467EF2A9CB9F1004CC947 /* ReadRecipeButton.swift in Sources */,
+				3E0467FC2A9F9065004CC947 /* StorePurchaseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3E3A15012A8286C60086F5B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E3A15022A8286C60086F5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E3A15042A8286C60086F5B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FoodieFolio/Preview Content\"";
+				DEVELOPMENT_TEAM = K53YWP4G6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcabrera.FoodieFolio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E3A15052A8286C60086F5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FoodieFolio/Preview Content\"";
+				DEVELOPMENT_TEAM = K53YWP4G6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcabrera.FoodieFolio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E3A14F02A8286C50086F5B8 /* Build configuration list for PBXProject "FoodieFolio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3A15012A8286C60086F5B8 /* Debug */,
+				3E3A15022A8286C60086F5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E3A15032A8286C60086F5B8 /* Build configuration list for PBXNativeTarget "FoodieFolio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3A15042A8286C60086F5B8 /* Debug */,
+				3E3A15052A8286C60086F5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E3A15062A83AC220086F5B8 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.44.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E3A15072A83AC220086F5B8 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E3A15062A83AC220086F5B8 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		3E3A15092A83AC220086F5B8 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E3A15062A83AC220086F5B8 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3E3A14ED2A8286C50086F5B8 /* Project object */;
+}

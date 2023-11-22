@@ -1,0 +1,16 @@
+{
+    "name": "fetchPremiumRecipes",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "*/30 * * * *",
+        "skip_catchup_events": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "fetchPremiumRecipes"
+            }
+        }
+    }
+}
