@@ -39,7 +39,7 @@ The app addresses the following points:
 * Log user purchases in Atlas using Atlas App Services to be able to obtain all customer's purchases through Apple's purchase receipts. 
 
 **Realm Details:**
-* RealmSwift v10.43.0
+* RealmSwift v10.44.0
 
 ## Version Support
 
