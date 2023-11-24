@@ -9,7 +9,7 @@ In this project you will be able to see an example of the following use case:
 * Fetch data into your app using Flexible Sync.
 * Purchase non-consumable products.
 * Fetch all receipts from verified transactions and send them to an Atlas Cluster through [App Services Functions](https://www.mongodb.com/docs/atlas/app-services/functions/).
-* You can also go further and leverage the use of [App Services Custom HTTPS Endpoints](https://www.mongodb.com/docs/atlas/app-services/data-api/custom-endpoints/#std-label-endpoint-authorization) to implement App Store Server Notifications as an additional step (not included in this example).
+* You can also go further and leverage the use of [App Services Custom HTTPS Endpoints](https://www.mongodb.com/docs/atlas/app-services/data-api/custom-endpoints/#std-label-endpoint-authorization) to implement App Store Server Notifications and/or App Store Server API for server side purchase verification as an additional step (not included in this example).
 
 ## Relevant Files
 ```
