@@ -8,7 +8,8 @@ In this project you will be able to see an example of the following use case:
 * Authenticate users using the Swift SDK.
 * Fetch data into your app using Flexible Sync.
 * Purchase non-consumable products.
-* Fetch all receipts from purchases and view them on Atlas.
+* Fetch all receipts from verified transactions and send them to an Atlas Cluster through [App Services Functions](https://www.mongodb.com/docs/atlas/app-services/functions/).
+* You can also go further and leverage the use of [App Services Custom HTTPS Endpoints](https://www.mongodb.com/docs/atlas/app-services/data-api/custom-endpoints/#std-label-endpoint-authorization) to implement App Store Server Notifications and/or App Store Server API for server side purchase verification as an additional step (not included in this example).
 
 ## Relevant Files
 ```
@@ -38,7 +39,7 @@ The app addresses the following points:
 * Integrate RealmSwift framework for database management using Flexible Sync.
 * Access a already login user in order to display a list of recipes.
 * Implement [IAP](https://developer.apple.com/in-app-purchase/) for purchasing premium recipes.
-* After the purchase is done, new recipes will get unlocked.
+* After the purchase is done, new recipes will get unlocked. The receipt that is returned from StoreKit with the purchase information contain a [validated transaction](https://developer.apple.com/documentation/storekit/product/purchaseresult) that will be send to your Atlas cluster using [App Services functions](https://www.mongodb.com/docs/atlas/app-services/functions/)
 * Log user purchases in Atlas using Atlas App Services to be able to obtain all customer's purchases through Apple's purchase receipts. 
 
 **Realm Details:**
